@@ -22,8 +22,7 @@ namespace SDC.Coach.iOS
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
 
-            var googleServiceDictionary = NSDictionary.FromFile("GoogleService-Info.plist");
-            SignIn.SharedInstance.ClientID = googleServiceDictionary["CLIENT_ID"].ToString();
+            SignIn.SharedInstance.ClientID = SDC.Coach.Configuration.ClientId;
 
             return true;
         }
