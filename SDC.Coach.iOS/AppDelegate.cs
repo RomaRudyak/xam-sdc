@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using Google.SignIn;
 using UIKit;
 
 namespace SDC.Coach.iOS
@@ -21,7 +22,17 @@ namespace SDC.Coach.iOS
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
 
+            var googleServiceDictionary = NSDictionary.FromFile("GoogleService-Info.plist");
+            SignIn.SharedInstance.ClientID = googleServiceDictionary["CLIENT_ID"].ToString();
+
             return true;
+        }
+
+        // For iOS 9 or newer
+        public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
+        {
+            var openUrlOptions = new UIApplicationOpenUrlOptions(options);
+            return SignIn.SharedInstance.HandleUrl(url, openUrlOptions.SourceApplication, openUrlOptions.Annotation);
         }
 
         public override void OnResignActivation(UIApplication application)
