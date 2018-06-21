@@ -39,6 +39,7 @@ namespace SDC.Coach.Droid
             // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
             GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DefaultSignIn)
                     .RequestEmail()
+                    .RequestServerAuthCode(Configuration.GoogleClientIdDroid, false)
                     .Build();
             // [END configure_signin]
 
@@ -47,6 +48,7 @@ namespace SDC.Coach.Droid
             // options specified by gso.
             mGoogleApiClient = new GoogleApiClient.Builder(this)
                     .EnableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
+
                     .AddApi(Auth.GOOGLE_SIGN_IN_API, gso)
                     .Build();
             // [END build_client]
