@@ -22,7 +22,7 @@ namespace SDC.Coach.iOS
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
 
-            SignIn.SharedInstance.ClientID = SDC.Coach.Configuration.ClientId;
+            SignIn.SharedInstance.ClientID = SDC.Coach.Configuration.GoogleClientIdiOS;
 
             return true;
         }

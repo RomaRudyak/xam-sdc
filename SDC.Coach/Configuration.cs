@@ -6,6 +6,7 @@ namespace SDC.Coach
 {
     public static class Configuration
     {
-        public static String ClientId { get; } = Secrets.GoogleClientId;
+        public static String GoogleClientIdiOS { get; } = Secrets.GoogleClientIdiOS;
+        public static String GoogleClientIdDroid { get; } = Secrets.GoogleClientIdDroid;
     }
 }
