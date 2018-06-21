@@ -2,7 +2,7 @@
 #addin nuget:?package=Cake.Sonar
 
 var target = Argument("target", "Default");
-var login = Arguments<String>("login", null);
+var login = Argument<String>("login", null);
 
 Task("Default");
 
@@ -12,7 +12,8 @@ Task("SonarBegin")
         Url = "https://sonarcloud.io/",
         Login = login,
         Verbose = true,
-        Organization="romarudyak-github"
+        Organization="romarudyak-github",
+        Key="SDC-Coach"
      });
   });
 
