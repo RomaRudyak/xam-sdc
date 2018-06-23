@@ -11,6 +11,7 @@
         <RootNamespace>SDC.Coach.iOS</RootNamespace>
         <AssemblyName>SDC.Coach.iOS</AssemblyName>
         <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+        <DisableBuildToolsArtifactCopy>false</DisableBuildToolsArtifactCopy>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
         <DebugSymbols>true</DebugSymbols>
@@ -32,7 +33,6 @@
         <MtouchVerbosity>
         </MtouchVerbosity>
         <MtouchExtraArgs>--registrar:static</MtouchExtraArgs>
-        <DisableBuildToolsArtifactCopy>false</DisableBuildToolsArtifactCopy>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
         <DebugType>pdbonly</DebugType>
