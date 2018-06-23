@@ -2720,26 +2720,23 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f070010
 			public const int common_signin_button_text_long = 2131165200;
 			
-			// aapt resource value: 0x7f07003c
-			public const int desc_google_icon = 2131165244;
-			
 			// aapt resource value: 0x7f07003b
-			public const int disconnect = 2131165243;
+			public const int desc_google_icon = 2131165243;
+			
+			// aapt resource value: 0x7f07003a
+			public const int disconnect = 2131165242;
 			
 			// aapt resource value: 0x7f070037
 			public const int loading = 2131165239;
 			
-			// aapt resource value: 0x7f070039
-			public const int play_services_error_fmt = 2131165241;
+			// aapt resource value: 0x7f070038
+			public const int play_services_error_fmt = 2131165240;
 			
 			// aapt resource value: 0x7f070024
 			public const int search_menu_title = 2131165220;
 			
-			// aapt resource value: 0x7f070038
-			public const int server_client_id = 2131165240;
-			
-			// aapt resource value: 0x7f07003a
-			public const int sign_out = 2131165242;
+			// aapt resource value: 0x7f070039
+			public const int sign_out = 2131165241;
 			
 			// aapt resource value: 0x7f070034
 			public const int signed_in_fmt = 2131165236;

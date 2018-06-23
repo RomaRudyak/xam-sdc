@@ -35,7 +35,7 @@
         <JavaMaximumHeapSize>
         </JavaMaximumHeapSize>
         <AndroidSupportedAbis>arm64-v8a;armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
-        <DisableBuildToolsArtifactCopy>true</DisableBuildToolsArtifactCopy>
+        <DisableBuildToolsArtifactCopy>false</DisableBuildToolsArtifactCopy>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
         <DebugSymbols>true</DebugSymbols>
