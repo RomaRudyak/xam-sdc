@@ -46,3 +46,6 @@ secrets.json
 # Cake
 tools/**
 !tools/packages.config
+
+# SonarQube Tool
+.sonarqube/**
