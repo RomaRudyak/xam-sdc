@@ -3,54 +3,44 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Windows.Input;
-using GoogleClientSample.Models;
+using SDC.Coach.Models;
 using Plugin.GoogleClient;
 using Plugin.GoogleClient.Shared;
+using MvvmCross.Commands;
 
 namespace SDC.Coach.ViewModels
 {
-    public class LoginPageViewModel : INotifyPropertyChanged
+    public class LoginPageViewModel : ViewModelBase
     {
-        public UserProfile User { get; set; } = new UserProfile();
-        public string Name
+        public UserProfile User
         {
-            get => User.Name;
-            set => User.Name = value;
+            get => _user;
+            set => SetProperty(ref _user, value);
         }
 
-        public string Email
+        public bool IsLoggedIn
         {
-            get => User.Email;
-            set => User.Email = value;
+            get => _isLoggedIn;
+            set => SetProperty(ref _isLoggedIn, value);
         }
-
-        public Uri Picture
-        {
-            get => User.Picture;
-            set => User.Picture = value;
-        }
-
-        public bool IsLoggedIn { get; set; }
 
         public ICommand LoginCommand { get; set; }
         public ICommand LogoutCommand { get; set; }
-        private readonly IGoogleClientManager _googleClientManager;
-        public event PropertyChangedEventHandler PropertyChanged;
 
         public LoginPageViewModel()
         {
-            LoginCommand = new Command(LoginAsync);
-            LogoutCommand = new Command(Logout);
+            LoginCommand = new MvxCommand(LoginAsync);
+            LogoutCommand = new MvxCommand(Logout);
             _googleClientManager = CrossGoogleClient.Current;
             IsLoggedIn = false;
         }
 
         public async void LoginAsync()
         {
-            _googleClientManager.OnLogin += OnLoginCompleted;
             try
             {
-                await _googleClientManager.LoginAsync();
+                var res = await _googleClientManager.LoginAsync();
+                OnLoginCompleted(res);
             }
             //catch (GoogleClientSignInNetworkErrorException e)
             //{
@@ -76,28 +66,29 @@ namespace SDC.Coach.ViewModels
         }
 
 
-        private void OnLoginCompleted(object sender, GoogleClientResultEventArgs<GoogleUser> loginEventArgs)
+        private void OnLoginCompleted(GoogleResponse<GoogleUser> loginEventArgs)
         {
             if (loginEventArgs.Data != null)
             {
-                GoogleUser googleUser = loginEventArgs.Data;
-
-                User.Name = googleUser.Name;
-                User.Email = googleUser.Email;
-                User.Picture = googleUser.Picture;
-
-
-                // Log the current User email
-                Debug.WriteLine(User.Email);
-                IsLoggedIn = true;
-            }
-            else
-            {
                 OnError(loginEventArgs.Message);
+                User = null;
+                return;
             }
 
-            _googleClientManager.OnLogin -= OnLoginCompleted;
+            GoogleUser googleUser = loginEventArgs.Data;
 
+            var user = new UserProfile
+            {
+                Name = googleUser.Name,
+                Email = googleUser.Email,
+                Picture = googleUser.Picture,
+            };
+
+            User = user;
+
+            // Log the current User email
+            Debug.WriteLine(User.Email);
+            IsLoggedIn = true;
         }
 
 
@@ -114,5 +105,11 @@ namespace SDC.Coach.ViewModels
             _googleClientManager.OnLogout -= OnLogoutCompleted;
         }
         private static void OnError(string message) => Debug.WriteLine(message);
+
+
+        private readonly IGoogleClientManager _googleClientManager;
+        private UserProfile _user;
+        private bool _isLoggedIn;
+
     }
 }

@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 using Plugin.GoogleClient.Shared;
+using PropertyChanged;
 
-// If you wish to create your custom UserProfile just replace the Google Client Google User with your own UserProfile Model
 namespace SDC.Coach.Models
 {
-    public class UserProfile : INotifyPropertyChanged
+    [AddINotifyPropertyChangedInterface]
+    public class UserProfile
     {
         public string Name { get; set; }
         public string Email { get; set; }
         public Uri Picture { get; set; }
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
