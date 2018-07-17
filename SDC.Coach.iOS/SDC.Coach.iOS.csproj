@@ -108,6 +108,9 @@
         <Reference Include="Google.SignIn">
             <HintPath>..\packages\Xamarin.Google.iOS.SignIn.4.1.1.1\lib\Xamarin.iOS10\Google.SignIn.dll</HintPath>
         </Reference>
+        <Reference Include="Plugin.GoogleClient">
+          <HintPath>..\packages\Plugin.GoogleClient.1.0.8\lib\xamarinios10\Plugin.GoogleClient.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />

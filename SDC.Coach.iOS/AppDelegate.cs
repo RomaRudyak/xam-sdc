@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using Google.SignIn;
+using Plugin.GoogleClient;
 using UIKit;
 
 namespace SDC.Coach.iOS
@@ -22,16 +23,26 @@ namespace SDC.Coach.iOS
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
 
-            SignIn.SharedInstance.ClientID = SDC.Coach.Configuration.GoogleClientIdiOS;
+            // Note using safe initialization from secrets
+            // Workaround for manul code setting
+            try
+            {
+                GoogleClientManager.Initialize();
+            }
+            catch (System.Exception) { }
+            finally
+            {
+                SignIn.SharedInstance.ClientID = SDC.Coach.Configuration.GoogleClientIdiOS;
 
+            }
             return true;
         }
 
         // For iOS 9 or newer
         public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
         {
-            var openUrlOptions = new UIApplicationOpenUrlOptions(options);
-            return SignIn.SharedInstance.HandleUrl(url, openUrlOptions.SourceApplication, openUrlOptions.Annotation);
+            base.OpenUrl(app, url, options);
+            return GoogleClientManager.OnOpenUrl(app, url, options);
         }
 
         public override void OnResignActivation(UIApplication application)
