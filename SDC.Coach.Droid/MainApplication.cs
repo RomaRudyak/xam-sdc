@@ -12,11 +12,12 @@ using Android.Views;
 using Android.Widget;
 using MvvmCross.Platforms.Android.Core;
 using MvvmCross.Platforms.Android.Views;
+using MvvmCross.Droid.Support.V7.AppCompat;
 
 namespace SDC.Coach.Droid
 {
     [Application]
-    public class MainApplication : MvxAndroidApplication<MvxAndroidSetup<App>, App>
+    public class MainApplication : MvxAppCompatApplication<MvxAppCompatSetup<App>, App>
     {
         public MainApplication(IntPtr javaReference, JniHandleOwnership transfer)
             : base(javaReference, transfer)

@@ -166,7 +166,7 @@
         <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
         <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
         <AndroidResource Include="Resources\drawable-xxxhdpi\icon.png" />
-        <AndroidResource Include="Resources\layout\LoginView.xml" />
+        <AndroidResource Include="Resources\layout\LoginView.axml" />
         <AndroidResource Include="Resources\mipmap-hdpi\ic_google.png" />
         <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
         <AndroidResource Include="Resources\mipmap-mdpi\ic_google.png" />

@@ -17,7 +17,7 @@ using SDC.Coach.ViewModels;
 
 namespace SDC.Coach.Droid.Views
 {
-    [Activity(Label = "Coach", MainLauncher = true)]
+    [Activity(Label = "Coach")]
     public class LoginView : MvxAppCompatActivity<LoginPageViewModel>
     {
         protected override void OnCreate(Bundle bundle)
@@ -30,7 +30,7 @@ namespace SDC.Coach.Droid.Views
             // [START customize_button]
             // Set the dimensions of the sign-in button.
             var signInButton = FindViewById<SignInButton>(Resource.Id.sign_in_button);
-            signInButton.SetSize(SignInButton.SizeStandard);
+            signInButton.SetSize(SignInButton.SizeWide);
             // [END customize_button]
         }
 

@@ -12,17 +12,17 @@ using Android.Views;
 using Android.Widget;
 
 using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.Platforms.Android.Core;
+using MvvmCross.ViewModels;
 
 namespace SDC.Coach.Droid
 {
-    //[Activity(Label = "SplashScreen")]
-    //public class SplashScreen : MvxSplashScreenAppCompatActivity
-    //{
-    //    protected override void OnCreate(Bundle bundle)
-    //    {
-    //        base.OnCreate(bundle);
+    [Activity(
+        MainLauncher = true
+        , NoHistory = true
+        )]
+    public class SplashScreen : MvxSplashScreenAppCompatActivity
+    {
 
-    //        // Create your application here
-    //    }
-    //}
+    }
 }
