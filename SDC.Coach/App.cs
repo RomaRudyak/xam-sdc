@@ -1,10 +1,14 @@
 ﻿using System;
+using MvvmCross.Navigation;
+using MvvmCross.ViewModels;
+using SDC.Coach.ViewModels;
 namespace SDC.Coach
 {
-    public class App
+    public class App : MvxApplication
     {
-        public App()
+        public override void Initialize()
         {
+            RegisterAppStart<LoginPageViewModel>();
         }
     }
 }

@@ -11,26 +11,19 @@ using Android.Util;
 using Android.Gms.Auth.Api.SignIn;
 using Android.Gms.Auth.Api;
 using Plugin.GoogleClient;
+using MvvmCross.Platforms.Android.Binding.Views;
+using MvvmCross.Droid.Support.V7.AppCompat;
+using SDC.Coach.ViewModels;
 
-namespace SDC.Coach.Droid
+namespace SDC.Coach.Droid.Views
 {
     [Activity(Label = "Coach", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity
-        , View.IOnClickListener
-        , GoogleApiClient.IOnConnectionFailedListener
+    public class LoginView : MvxAppCompatActivity<LoginPageViewModel>
     {
-        const string TAG = "MainActivity";
-
-        const int RC_SIGN_IN = 9001;
-
-        GoogleApiClient mGoogleApiClient;
-        TextView mStatusTextView;
-        ProgressDialog mProgressDialog;
-
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.activity_main);
+            base.OnCreate(bundle);
+            SetContentView(Resource.Layout.LoginView);
 
             GoogleClientManager.Initialize(this);
 
