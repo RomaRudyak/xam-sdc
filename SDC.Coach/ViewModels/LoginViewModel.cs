@@ -10,7 +10,7 @@ using MvvmCross.Commands;
 
 namespace SDC.Coach.ViewModels
 {
-    public class LoginPageViewModel : ViewModelBase
+    public class LoginViewModel : ViewModelBase
     {
         public UserProfile User
         {
@@ -27,7 +27,7 @@ namespace SDC.Coach.ViewModels
         public ICommand LoginCommand { get; set; }
         public ICommand LogoutCommand { get; set; }
 
-        public LoginPageViewModel()
+        public LoginViewModel()
         {
             LoginCommand = new MvxCommand(LoginAsync);
             LogoutCommand = new MvxCommand(Logout);

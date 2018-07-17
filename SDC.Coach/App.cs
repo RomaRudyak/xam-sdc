@@ -8,7 +8,7 @@ namespace SDC.Coach
     {
         public override void Initialize()
         {
-            RegisterAppStart<LoginPageViewModel>();
+            RegisterAppStart<LoginViewModel>();
         }
     }
 }

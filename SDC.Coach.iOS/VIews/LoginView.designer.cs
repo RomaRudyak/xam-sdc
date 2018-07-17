@@ -7,11 +7,12 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace SDC.Coach.iOS
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("LoginView")]
+    partial class LoginView
     {
         void ReleaseDesignerOutlets ()
         {
