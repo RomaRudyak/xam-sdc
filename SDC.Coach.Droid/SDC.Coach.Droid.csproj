@@ -74,9 +74,6 @@
         <Reference Include="Xamarin.GooglePlayServices.Identity">
             <HintPath>..\packages\Xamarin.GooglePlayServices.Identity.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Identity.dll</HintPath>
         </Reference>
-        <Reference Include="Plugin.GoogleClient">
-            <HintPath>..\packages\Plugin.GoogleClient.1.0.8\lib\monoandroid80\Plugin.GoogleClient.dll</HintPath>
-        </Reference>
         <Reference Include="Java.Interop" />
         <Reference Include="System.IdentityModel" />
         <Reference Include="System.Net.Http" />
@@ -142,6 +139,9 @@
         </Reference>
         <Reference Include="MvvmCross.Droid.Support.V7.AppCompat">
             <HintPath>..\packages\MvvmCross.Droid.Support.V7.AppCompat.6.1.2\lib\monoandroid81\MvvmCross.Droid.Support.V7.AppCompat.dll</HintPath>
+        </Reference>
+        <Reference Include="Plugin.GoogleClient">
+          <HintPath>..\packages\Plugin.GoogleClient.1.0.12-beta\lib\monoandroid80\Plugin.GoogleClient.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>

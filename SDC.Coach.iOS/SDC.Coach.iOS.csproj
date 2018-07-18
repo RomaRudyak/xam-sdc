@@ -108,14 +108,14 @@
         <Reference Include="Google.SignIn">
             <HintPath>..\packages\Xamarin.Google.iOS.SignIn.4.1.1.1\lib\Xamarin.iOS10\Google.SignIn.dll</HintPath>
         </Reference>
-        <Reference Include="Plugin.GoogleClient">
-          <HintPath>..\packages\Plugin.GoogleClient.1.0.8\lib\xamarinios10\Plugin.GoogleClient.dll</HintPath>
-        </Reference>
         <Reference Include="MvvmCross">
           <HintPath>..\packages\MvvmCross.6.1.2\lib\xamarinios10\MvvmCross.dll</HintPath>
         </Reference>
         <Reference Include="Cirrious.FluentLayouts.Touch">
           <HintPath>..\packages\Cirrious.FluentLayout.2.7.0\lib\Xamarin.iOS10\Cirrious.FluentLayouts.Touch.dll</HintPath>
+        </Reference>
+        <Reference Include="Plugin.GoogleClient">
+          <HintPath>..\packages\Plugin.GoogleClient.1.0.12-beta\lib\xamarinios10\Plugin.GoogleClient.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>
