@@ -17,7 +17,7 @@ namespace SDC.Coach.iOS
         public UILabel SignInStatusLabel { get; private set; }
 
 
-        public LoginView() 
+        public LoginView()
             : base(nameof(LoginView), null)
         {
         }
@@ -47,8 +47,12 @@ namespace SDC.Coach.iOS
 
             var set = this.CreateBindingSet<LoginView, LoginViewModel>();
 
-            set.Bind(SignInButton).To(vm => vm.LoginCommand).For(c => c.BindTouchUpInside());
-            set.Bind(SignInStatusLabel).To(vm => vm.IsLoggedIn);
+            set.Bind(SignInButton)
+               .For(c => c.BindTouchUpInside())
+               .To(vm => vm.LoginCommand);
+            set.Bind(SignInStatusLabel)
+                .For(c => c.BindText())
+                .To(vm => vm.IsLoggedIn);
 
             set.Apply();
 

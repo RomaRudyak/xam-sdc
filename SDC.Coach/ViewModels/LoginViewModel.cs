@@ -68,7 +68,7 @@ namespace SDC.Coach.ViewModels
 
         private void OnLoginCompleted(GoogleResponse<GoogleUser> loginEventArgs)
         {
-            if (loginEventArgs.Data != null)
+            if (loginEventArgs.Data == null)
             {
                 OnError(loginEventArgs.Message);
                 User = null;
