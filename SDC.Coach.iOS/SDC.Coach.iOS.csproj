@@ -144,6 +144,7 @@
         <Compile Include="VIews\LoginView.designer.cs">
           <DependentUpon>LoginView.cs</DependentUpon>
         </Compile>
+        <Compile Include="LinkerPleaseInclude.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\SDC.Coach\SDC.Coach.csproj">
