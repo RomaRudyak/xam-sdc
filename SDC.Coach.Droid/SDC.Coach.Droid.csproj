@@ -160,7 +160,6 @@
     </ItemGroup>
     <ItemGroup>
         <AndroidResource Include="Resources\values\Strings.xml" />
-        <AndroidResource Include="Resources\drawable\ic_launcher_big.png" />
         <AndroidResource Include="Resources\drawable\icon.png" />
         <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
         <AndroidResource Include="Resources\drawable-mdpi\icon.png" />
