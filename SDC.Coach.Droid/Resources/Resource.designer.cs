@@ -5156,44 +5156,44 @@ namespace SDC.Coach.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0a0054
-			public const int abc_background_cache_hint_selector_material_dark = 2131361876;
-			
-			// aapt resource value: 0x7f0a0055
-			public const int abc_background_cache_hint_selector_material_light = 2131361877;
-			
-			// aapt resource value: 0x7f0a0056
-			public const int abc_btn_colored_borderless_text_material = 2131361878;
-			
 			// aapt resource value: 0x7f0a0057
-			public const int abc_btn_colored_text_material = 2131361879;
+			public const int abc_background_cache_hint_selector_material_dark = 2131361879;
 			
 			// aapt resource value: 0x7f0a0058
-			public const int abc_color_highlight_material = 2131361880;
+			public const int abc_background_cache_hint_selector_material_light = 2131361880;
 			
 			// aapt resource value: 0x7f0a0059
-			public const int abc_hint_foreground_material_dark = 2131361881;
+			public const int abc_btn_colored_borderless_text_material = 2131361881;
 			
 			// aapt resource value: 0x7f0a005a
-			public const int abc_hint_foreground_material_light = 2131361882;
+			public const int abc_btn_colored_text_material = 2131361882;
+			
+			// aapt resource value: 0x7f0a005b
+			public const int abc_color_highlight_material = 2131361883;
+			
+			// aapt resource value: 0x7f0a005c
+			public const int abc_hint_foreground_material_dark = 2131361884;
+			
+			// aapt resource value: 0x7f0a005d
+			public const int abc_hint_foreground_material_light = 2131361885;
 			
 			// aapt resource value: 0x7f0a0008
 			public const int abc_input_method_navigation_guard = 2131361800;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int abc_primary_text_disable_only_material_dark = 2131361883;
-			
-			// aapt resource value: 0x7f0a005c
-			public const int abc_primary_text_disable_only_material_light = 2131361884;
-			
-			// aapt resource value: 0x7f0a005d
-			public const int abc_primary_text_material_dark = 2131361885;
-			
 			// aapt resource value: 0x7f0a005e
-			public const int abc_primary_text_material_light = 2131361886;
+			public const int abc_primary_text_disable_only_material_dark = 2131361886;
 			
 			// aapt resource value: 0x7f0a005f
-			public const int abc_search_url_text = 2131361887;
+			public const int abc_primary_text_disable_only_material_light = 2131361887;
+			
+			// aapt resource value: 0x7f0a0060
+			public const int abc_primary_text_material_dark = 2131361888;
+			
+			// aapt resource value: 0x7f0a0061
+			public const int abc_primary_text_material_light = 2131361889;
+			
+			// aapt resource value: 0x7f0a0062
+			public const int abc_search_url_text = 2131361890;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int abc_search_url_text_normal = 2131361801;
@@ -5204,29 +5204,29 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0a000b
 			public const int abc_search_url_text_selected = 2131361803;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int abc_secondary_text_material_dark = 2131361888;
-			
-			// aapt resource value: 0x7f0a0061
-			public const int abc_secondary_text_material_light = 2131361889;
-			
-			// aapt resource value: 0x7f0a0062
-			public const int abc_tint_btn_checkable = 2131361890;
-			
 			// aapt resource value: 0x7f0a0063
-			public const int abc_tint_default = 2131361891;
+			public const int abc_secondary_text_material_dark = 2131361891;
 			
 			// aapt resource value: 0x7f0a0064
-			public const int abc_tint_edittext = 2131361892;
+			public const int abc_secondary_text_material_light = 2131361892;
 			
 			// aapt resource value: 0x7f0a0065
-			public const int abc_tint_seek_thumb = 2131361893;
+			public const int abc_tint_btn_checkable = 2131361893;
 			
 			// aapt resource value: 0x7f0a0066
-			public const int abc_tint_spinner = 2131361894;
+			public const int abc_tint_default = 2131361894;
 			
 			// aapt resource value: 0x7f0a0067
-			public const int abc_tint_switch_track = 2131361895;
+			public const int abc_tint_edittext = 2131361895;
+			
+			// aapt resource value: 0x7f0a0068
+			public const int abc_tint_seek_thumb = 2131361896;
+			
+			// aapt resource value: 0x7f0a0069
+			public const int abc_tint_spinner = 2131361897;
+			
+			// aapt resource value: 0x7f0a006a
+			public const int abc_tint_switch_track = 2131361898;
 			
 			// aapt resource value: 0x7f0a000c
 			public const int accent_material_dark = 2131361804;
@@ -5285,8 +5285,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0a0019
 			public const int button_material_light = 2131361817;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int common_google_signin_btn_text_dark = 2131361896;
+			// aapt resource value: 0x7f0a006b
+			public const int common_google_signin_btn_text_dark = 2131361899;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int common_google_signin_btn_text_dark_default = 2131361792;
@@ -5300,8 +5300,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0a0003
 			public const int common_google_signin_btn_text_dark_pressed = 2131361795;
 			
-			// aapt resource value: 0x7f0a0069
-			public const int common_google_signin_btn_text_light = 2131361897;
+			// aapt resource value: 0x7f0a006c
+			public const int common_google_signin_btn_text_light = 2131361900;
 			
 			// aapt resource value: 0x7f0a0004
 			public const int common_google_signin_btn_text_light_default = 2131361796;
@@ -5315,14 +5315,14 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0a0007
 			public const int common_google_signin_btn_text_light_pressed = 2131361799;
 			
-			// aapt resource value: 0x7f0a006a
-			public const int common_google_signin_btn_tint = 2131361898;
+			// aapt resource value: 0x7f0a006d
+			public const int common_google_signin_btn_tint = 2131361901;
 			
 			// aapt resource value: 0x7f0a0044
 			public const int design_bottom_navigation_shadow_color = 2131361860;
 			
-			// aapt resource value: 0x7f0a006b
-			public const int design_error = 2131361899;
+			// aapt resource value: 0x7f0a006e
+			public const int design_error = 2131361902;
 			
 			// aapt resource value: 0x7f0a0045
 			public const int design_fab_shadow_end_color = 2131361861;
@@ -5348,8 +5348,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0a004c
 			public const int design_snackbar_background_color = 2131361868;
 			
-			// aapt resource value: 0x7f0a006c
-			public const int design_tint_password_toggle = 2131361900;
+			// aapt resource value: 0x7f0a006f
+			public const int design_tint_password_toggle = 2131361903;
 			
 			// aapt resource value: 0x7f0a001a
 			public const int dim_foreground_disabled_material_dark = 2131361818;
@@ -5447,6 +5447,12 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0a0036
 			public const int primary_text_disabled_material_light = 2131361846;
 			
+			// aapt resource value: 0x7f0a0055
+			public const int red = 2131361877;
+			
+			// aapt resource value: 0x7f0a0056
+			public const int red_light = 2131361878;
+			
 			// aapt resource value: 0x7f0a0037
 			public const int ripple_material_dark = 2131361847;
 			
@@ -5471,11 +5477,11 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0a003e
 			public const int switch_thumb_disabled_material_light = 2131361854;
 			
-			// aapt resource value: 0x7f0a006d
-			public const int switch_thumb_material_dark = 2131361901;
+			// aapt resource value: 0x7f0a0070
+			public const int switch_thumb_material_dark = 2131361904;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int switch_thumb_material_light = 2131361902;
+			// aapt resource value: 0x7f0a0071
+			public const int switch_thumb_material_light = 2131361905;
 			
 			// aapt resource value: 0x7f0a003f
 			public const int switch_thumb_normal_material_dark = 2131361855;
@@ -5488,6 +5494,9 @@ namespace SDC.Coach.Droid
 			
 			// aapt resource value: 0x7f0a0042
 			public const int tooltip_background_light = 2131361858;
+			
+			// aapt resource value: 0x7f0a0054
+			public const int white = 2131361876;
 			
 			static Color()
 			{
@@ -6344,10 +6353,10 @@ namespace SDC.Coach.Droid
 			public const int googleg_standard_color_18 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_launcher_big = 2130837616;
+			public const int icon = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int icon = 2130837617;
+			public const int logo_big = 2130837617;
 			
 			// aapt resource value: 0x7f020072
 			public const int navigation_empty_icon = 2130837618;
@@ -6431,8 +6440,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0041
 			public const int SYM = 2131492929;
 			
-			// aapt resource value: 0x7f0c00ab
-			public const int action0 = 2131493035;
+			// aapt resource value: 0x7f0c00aa
+			public const int action0 = 2131493034;
 			
 			// aapt resource value: 0x7f0c0085
 			public const int action_bar = 2131492997;
@@ -6455,17 +6464,17 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0063
 			public const int action_bar_title = 2131492963;
 			
-			// aapt resource value: 0x7f0c00a8
-			public const int action_container = 2131493032;
+			// aapt resource value: 0x7f0c00a7
+			public const int action_container = 2131493031;
 			
 			// aapt resource value: 0x7f0c0086
 			public const int action_context_bar = 2131492998;
 			
-			// aapt resource value: 0x7f0c00af
-			public const int action_divider = 2131493039;
+			// aapt resource value: 0x7f0c00ae
+			public const int action_divider = 2131493038;
 			
-			// aapt resource value: 0x7f0c00a9
-			public const int action_image = 2131493033;
+			// aapt resource value: 0x7f0c00a8
+			public const int action_image = 2131493032;
 			
 			// aapt resource value: 0x7f0c0003
 			public const int action_menu_divider = 2131492867;
@@ -6482,11 +6491,11 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0065
 			public const int action_mode_close_button = 2131492965;
 			
-			// aapt resource value: 0x7f0c00aa
-			public const int action_text = 2131493034;
+			// aapt resource value: 0x7f0c00a9
+			public const int action_text = 2131493033;
 			
-			// aapt resource value: 0x7f0c00b8
-			public const int actions = 2131493048;
+			// aapt resource value: 0x7f0c00b7
+			public const int actions = 2131493047;
 			
 			// aapt resource value: 0x7f0c0066
 			public const int activity_chooser_view_content = 2131492966;
@@ -6527,8 +6536,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c006c
 			public const int buttonPanel = 2131492972;
 			
-			// aapt resource value: 0x7f0c00ac
-			public const int cancel_action = 2131493036;
+			// aapt resource value: 0x7f0c00ab
+			public const int cancel_action = 2131493035;
 			
 			// aapt resource value: 0x7f0c004e
 			public const int center = 2131492942;
@@ -6542,8 +6551,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c007c
 			public const int checkbox = 2131492988;
 			
-			// aapt resource value: 0x7f0c00b4
-			public const int chronometer = 2131493044;
+			// aapt resource value: 0x7f0c00b3
+			public const int chronometer = 2131493043;
 			
 			// aapt resource value: 0x7f0c0057
 			public const int clip_horizontal = 2131492951;
@@ -6602,8 +6611,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c003a
 			public const int end = 2131492922;
 			
-			// aapt resource value: 0x7f0c00ba
-			public const int end_padder = 2131493050;
+			// aapt resource value: 0x7f0c00b9
+			public const int end_padder = 2131493049;
 			
 			// aapt resource value: 0x7f0c0049
 			public const int enterAlways = 2131492937;
@@ -6638,9 +6647,6 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c000a
 			public const int ghost_view = 2131492874;
 			
-			// aapt resource value: 0x7f0c00a2
-			public const int google_icon = 2131493026;
-			
 			// aapt resource value: 0x7f0c0005
 			public const int home = 2131492869;
 			
@@ -6650,8 +6656,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c006b
 			public const int icon = 2131492971;
 			
-			// aapt resource value: 0x7f0c00b9
-			public const int icon_group = 2131493049;
+			// aapt resource value: 0x7f0c00b8
+			public const int icon_group = 2131493048;
 			
 			// aapt resource value: 0x7f0c0022
 			public const int icon_only = 2131492898;
@@ -6662,8 +6668,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0068
 			public const int image = 2131492968;
 			
-			// aapt resource value: 0x7f0c00b5
-			public const int info = 2131493045;
+			// aapt resource value: 0x7f0c00b4
+			public const int info = 2131493044;
 			
 			// aapt resource value: 0x7f0c0062
 			public const int italic = 2131492962;
@@ -6692,14 +6698,17 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c006a
 			public const int list_item = 2131492970;
 			
-			// aapt resource value: 0x7f0c00bd
-			public const int masked = 2131493053;
+			// aapt resource value: 0x7f0c00a2
+			public const int logo = 2131493026;
 			
-			// aapt resource value: 0x7f0c00ae
-			public const int media_actions = 2131493038;
+			// aapt resource value: 0x7f0c00bc
+			public const int masked = 2131493052;
 			
-			// aapt resource value: 0x7f0c00bb
-			public const int message = 2131493051;
+			// aapt resource value: 0x7f0c00ad
+			public const int media_actions = 2131493037;
+			
+			// aapt resource value: 0x7f0c00ba
+			public const int message = 2131493050;
 			
 			// aapt resource value: 0x7f0c003b
 			public const int middle = 2131492923;
@@ -6722,14 +6731,14 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0029
 			public const int normal = 2131492905;
 			
-			// aapt resource value: 0x7f0c00b7
-			public const int notification_background = 2131493047;
-			
-			// aapt resource value: 0x7f0c00b1
-			public const int notification_main_column = 2131493041;
+			// aapt resource value: 0x7f0c00b6
+			public const int notification_background = 2131493046;
 			
 			// aapt resource value: 0x7f0c00b0
-			public const int notification_main_column_container = 2131493040;
+			public const int notification_main_column = 2131493040;
+			
+			// aapt resource value: 0x7f0c00af
+			public const int notification_main_column_container = 2131493039;
 			
 			// aapt resource value: 0x7f0c0055
 			public const int parallax = 2131492949;
@@ -6755,11 +6764,11 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0053
 			public const int right = 2131492947;
 			
-			// aapt resource value: 0x7f0c00b6
-			public const int right_icon = 2131493046;
+			// aapt resource value: 0x7f0c00b5
+			public const int right_icon = 2131493045;
 			
-			// aapt resource value: 0x7f0c00b2
-			public const int right_side = 2131493042;
+			// aapt resource value: 0x7f0c00b1
+			public const int right_side = 2131493041;
 			
 			// aapt resource value: 0x7f0c000c
 			public const int save_image_matrix = 2131492876;
@@ -6837,10 +6846,7 @@ namespace SDC.Coach.Droid
 			public const int sign_in_button = 2131493029;
 			
 			// aapt resource value: 0x7f0c00a6
-			public const int sign_out_and_disconnect = 2131493030;
-			
-			// aapt resource value: 0x7f0c00a7
-			public const int sign_out_button = 2131493031;
+			public const int sign_out_button = 2131493030;
 			
 			// aapt resource value: 0x7f0c0094
 			public const int smallLabel = 2131493012;
@@ -6875,11 +6881,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0054
 			public const int start = 2131492948;
 			
-			// aapt resource value: 0x7f0c00a4
-			public const int status = 2131493028;
-			
-			// aapt resource value: 0x7f0c00ad
-			public const int status_bar_latest_event_content = 2131493037;
+			// aapt resource value: 0x7f0c00ac
+			public const int status_bar_latest_event_content = 2131493036;
 			
 			// aapt resource value: 0x7f0c007f
 			public const int submenuarrow = 2131492991;
@@ -6914,8 +6917,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0015
 			public const int textinput_error = 2131492885;
 			
-			// aapt resource value: 0x7f0c00b3
-			public const int time = 2131493043;
+			// aapt resource value: 0x7f0c00b2
+			public const int time = 2131493042;
 			
 			// aapt resource value: 0x7f0c001c
 			public const int title = 2131492892;
@@ -6928,6 +6931,9 @@ namespace SDC.Coach.Droid
 			
 			// aapt resource value: 0x7f0c00a3
 			public const int title_text = 2131493027;
+			
+			// aapt resource value: 0x7f0c00a4
+			public const int title_text_app = 2131493028;
 			
 			// aapt resource value: 0x7f0c0048
 			public const int top = 2131492936;
@@ -6965,8 +6971,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0016
 			public const int view_offset_helper = 2131492886;
 			
-			// aapt resource value: 0x7f0c00bc
-			public const int visible = 2131493052;
+			// aapt resource value: 0x7f0c00bb
+			public const int visible = 2131493051;
 			
 			// aapt resource value: 0x7f0c0024
 			public const int wide = 2131492900;
