@@ -17,12 +17,12 @@ using MvvmCross.ViewModels;
 
 namespace SDC.Coach.Droid
 {
-    [Activity(
-        MainLauncher = true
-        , NoHistory = true
-        )]
-    public class SplashScreen : MvxSplashScreenAppCompatActivity
-    {
+    //[Activity(
+    //    MainLauncher = true
+    //    , NoHistory = true
+    //    )]
+    //public class SplashScreen : MvxSplashScreenAppCompatActivity
+    //{
 
-    }
+    //}
 }
