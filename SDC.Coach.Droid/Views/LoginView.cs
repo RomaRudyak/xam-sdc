@@ -17,7 +17,10 @@ using SDC.Coach.ViewModels;
 
 namespace SDC.Coach.Droid.Views
 {
-    [Activity(Label = "Coach")]
+    [Activity(
+        Label = "Coach"
+        , MainLauncher = true
+        )]
     public class LoginView : MvxAppCompatActivity<LoginViewModel>
     {
         protected override void OnCreate(Bundle bundle)
