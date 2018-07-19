@@ -5,7 +5,6 @@ using Android.App;
 using Android.Views;
 using Android.Widget;
 using MvvmCross.IoC;
-using MvvmCross.Platform.IoC;
 
 namespace SDC.Coach.Droid
 {
