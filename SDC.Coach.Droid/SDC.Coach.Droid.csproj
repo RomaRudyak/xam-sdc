@@ -182,6 +182,7 @@
         <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
         <AndroidResource Include="Resources\values-land\dimens.xml" />
         <AndroidResource Include="Resources\values-w820dp\dimens.xml" />
+        <AndroidResource Include="Resources\drawable\logo_big.png" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\drawable\" />
