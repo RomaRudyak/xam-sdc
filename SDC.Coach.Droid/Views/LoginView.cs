@@ -14,6 +14,7 @@ using Plugin.GoogleClient;
 using MvvmCross.Platforms.Android.Binding.Views;
 using MvvmCross.Droid.Support.V7.AppCompat;
 using SDC.Coach.ViewModels;
+using Android.Gms.Drive;
 
 namespace SDC.Coach.Droid.Views
 {
@@ -28,7 +29,12 @@ namespace SDC.Coach.Droid.Views
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.LoginView);
 
-            GoogleClientManager.Initialize(this);
+            //GoogleClientManager.Initialize(this);
+            GoogleClientManager.Initialize(this
+                , Configuration.GoogleClientIdDroid
+                , new[] { DriveClass.API }
+                , new[] { Scopes.DriveFile }
+            );
 
             // [START customize_button]
             // Set the dimensions of the sign-in button.
