@@ -14,7 +14,6 @@ namespace SDC.Coach.iOS
     public partial class LoginView : MvxViewController<LoginViewModel>
     {
         public SignInButton SignInButton { get; private set; }
-        public UILabel SignInStatusLabel { get; private set; }
 
 
         public LoginView()
@@ -27,22 +26,14 @@ namespace SDC.Coach.iOS
             base.ViewDidLoad();
 
             SignInButton = new SignInButton();
-            SignInStatusLabel = new UILabel();
-            SignInStatusLabel.Text = "Status";
 
-            View.AddSubviews(
-                SignInButton
-                , SignInStatusLabel
-            );
+            View.AddSubview(SignInButton);
 
             View.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
 
             View.AddConstraints(
-                SignInButton.WithSameCenterY(View).Plus(30f)
-                , SignInButton.WithSameCenterX(View)
-
-                , SignInStatusLabel.WithSameCenterX(View)
-                , SignInStatusLabel.Above(SignInButton)
+                SignInButton.Below(AppNameLabel, 70f)
+                , SignInButton.WithSameCenterX(AppNameLabel)
             );
 
             var set = this.CreateBindingSet<LoginView, LoginViewModel>();
@@ -50,9 +41,9 @@ namespace SDC.Coach.iOS
             set.Bind(SignInButton)
                .For(c => c.BindTouchUpInside())
                .To(vm => vm.LoginCommand);
-            set.Bind(SignInStatusLabel)
-                .For(c => c.BindText())
-                .To(vm => vm.IsLoggedIn);
+            //set.Bind(SignInStatusLabel)
+            //.For(c => c.BindText())
+            //.To(vm => vm.IsLoggedIn);
 
             set.Apply();
 
