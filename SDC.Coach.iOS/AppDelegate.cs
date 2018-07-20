@@ -14,20 +14,12 @@ namespace SDC.Coach.iOS
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-            // Note using safe initialization from secrets
-            // Workaround for manul code setting
-            try
-            {
-                GoogleClientManager.Initialize();
-            }
-            catch (System.Exception) 
-            { 
-            }
-            finally
-            {
-                SignIn.SharedInstance.ClientID = Configuration.GoogleClientIdiOS;
+            GoogleClientManager.Initialize(
+                Configuration.GoogleClientIdiOS
+                , "https://www.googleapis.com/auth/drive"
 
-            }
+            );
+
             return base.FinishedLaunching(application, launchOptions);
         }
 
@@ -36,7 +28,6 @@ namespace SDC.Coach.iOS
         {
             return GoogleClientManager.OnOpenUrl(app, url, options);
         }
-
     }
 }
 
