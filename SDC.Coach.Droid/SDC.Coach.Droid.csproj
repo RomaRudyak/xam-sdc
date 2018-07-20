@@ -141,7 +141,7 @@
             <HintPath>..\packages\MvvmCross.Droid.Support.V7.AppCompat.6.1.2\lib\monoandroid81\MvvmCross.Droid.Support.V7.AppCompat.dll</HintPath>
         </Reference>
         <Reference Include="Plugin.GoogleClient">
-          <HintPath>..\packages\Plugin.GoogleClient.1.0.12-beta\lib\monoandroid80\Plugin.GoogleClient.dll</HintPath>
+          <HintPath>..\..\GoogleClientPlugin\GoogleClient\GoogleClient\bin\Debug\monoandroid80\Plugin.GoogleClient.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>
