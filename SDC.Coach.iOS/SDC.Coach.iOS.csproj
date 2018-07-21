@@ -154,6 +154,36 @@
     </ItemGroup>
     <ItemGroup>
       <BundleResource Include="Resources\logo_big.png" />
+      <BundleResource Include="Resources\Icon-16.png" />
+      <BundleResource Include="Resources\Icon-20.png" />
+      <BundleResource Include="Resources\Icon-29.png" />
+      <BundleResource Include="Resources\Icon-32.png" />
+      <BundleResource Include="Resources\Icon-40.png" />
+      <BundleResource Include="Resources\Icon-48.png" />
+      <BundleResource Include="Resources\Icon-50.png" />
+      <BundleResource Include="Resources\Icon-55.png" />
+      <BundleResource Include="Resources\Icon-57.png" />
+      <BundleResource Include="Resources\Icon-58.png" />
+      <BundleResource Include="Resources\Icon-60.png" />
+      <BundleResource Include="Resources\Icon-64.png" />
+      <BundleResource Include="Resources\Icon-72.png" />
+      <BundleResource Include="Resources\Icon-76.png" />
+      <BundleResource Include="Resources\Icon-80.png" />
+      <BundleResource Include="Resources\Icon-87.png" />
+      <BundleResource Include="Resources\Icon-88.png" />
+      <BundleResource Include="Resources\Icon-100.png" />
+      <BundleResource Include="Resources\Icon-114.png" />
+      <BundleResource Include="Resources\Icon-120.png" />
+      <BundleResource Include="Resources\Icon-128.png" />
+      <BundleResource Include="Resources\Icon-144.png" />
+      <BundleResource Include="Resources\Icon-152.png" />
+      <BundleResource Include="Resources\Icon-167.png" />
+      <BundleResource Include="Resources\Icon-172.png" />
+      <BundleResource Include="Resources\Icon-180.png" />
+      <BundleResource Include="Resources\Icon-196.png" />
+      <BundleResource Include="Resources\Icon-256.png" />
+      <BundleResource Include="Resources\Icon-512.png" />
+      <BundleResource Include="Resources\Icon-1024.png" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
     <Import Project="..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.targets')" />
