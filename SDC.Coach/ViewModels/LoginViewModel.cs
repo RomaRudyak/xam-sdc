@@ -7,6 +7,7 @@ using SDC.Coach.Models;
 using Plugin.GoogleClient;
 using Plugin.GoogleClient.Shared;
 using MvvmCross.Commands;
+using System.Threading.Tasks;
 
 namespace SDC.Coach.ViewModels
 {
@@ -29,35 +30,19 @@ namespace SDC.Coach.ViewModels
 
         public LoginViewModel()
         {
-            LoginCommand = new MvxCommand(LoginAsync);
+            LoginCommand = new MvxCommand(async () => await LoginAsync());
             LogoutCommand = new MvxCommand(Logout);
             _googleClientManager = CrossGoogleClient.Current;
             IsLoggedIn = false;
         }
 
-        public async void LoginAsync()
+        public async Task LoginAsync()
         {
             try
             {
                 var res = await _googleClientManager.LoginAsync();
                 OnLoginCompleted(res);
             }
-            //catch (GoogleClientSignInNetworkErrorException e)
-            //{
-            //	await App.Current.MainPage.DisplayAlert("Error", e.Message, "OK");
-            //}
-            //catch (GoogleClientSignInCanceledErrorException e)
-            //         {
-            //             await App.Current.MainPage.DisplayAlert("Error", e.Message, "OK");
-            //         }
-            //catch (GoogleClientSignInInvalidAccountErrorException e)
-            //         {
-            //             await App.Current.MainPage.DisplayAlert("Error", e.Message, "OK");
-            //         }
-            //catch (GoogleClientSignInInternalErrorException e)
-            //{
-            //    await App.Current.MainPage.DisplayAlert("Error", e.Message, "OK");
-            //}
             catch (GoogleClientBaseException e)
             {
                 OnError(e.ToString());
