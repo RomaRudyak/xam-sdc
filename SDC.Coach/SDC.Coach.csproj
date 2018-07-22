@@ -12,6 +12,7 @@
       <PackageReference Include="PropertyChanged.Fody" Version="2.5.8" />
       <PackageReference Include="Mobile.BuildTools" Version="1.4.0.638" />
       <PackageReference Include="Plugin.GoogleClient" Version="1.0.12-beta" />
+      <PackageReference Include="Refit" Version="4.6.16" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="ViewModels\" />
