@@ -19,6 +19,7 @@
       <Folder Include="Models\" />
       <Folder Include="Google\" />
       <Folder Include="Google\Drive\" />
+      <Folder Include="Google\Sheets\" />
     </ItemGroup>
     <ItemGroup>
       <None Remove=".DS_Store" />
