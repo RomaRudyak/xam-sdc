@@ -17,6 +17,8 @@
     <ItemGroup>
       <Folder Include="ViewModels\" />
       <Folder Include="Models\" />
+      <Folder Include="Google\" />
+      <Folder Include="Google\Drive\" />
     </ItemGroup>
     <ItemGroup>
       <None Remove=".DS_Store" />
