@@ -117,6 +117,12 @@
         <Reference Include="Plugin.GoogleClient">
           <HintPath>..\packages\Plugin.GoogleClient.1.0.12-beta\lib\xamarinios10\Plugin.GoogleClient.dll</HintPath>
         </Reference>
+        <Reference Include="Newtonsoft.Json">
+          <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="Refit">
+          <HintPath>..\packages\Refit.4.6.16\lib\netstandard2.0\Refit.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -192,4 +198,5 @@
     <Import Project="..\packages\Xamarin.Firebase.iOS.Analytics.4.0.5.1\build\Xamarin.Firebase.iOS.Analytics.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.Analytics.4.0.5.1\build\Xamarin.Firebase.iOS.Analytics.targets')" />
     <Import Project="..\packages\Xamarin.Google.iOS.SignIn.4.1.1.1\build\Xamarin.Google.iOS.SignIn.targets" Condition="Exists('..\packages\Xamarin.Google.iOS.SignIn.4.1.1.1\build\Xamarin.Google.iOS.SignIn.targets')" />
     <Import Project="..\packages\Mobile.BuildTools.1.4.0.638\build\Mobile.BuildTools.targets" Condition="Exists('..\packages\Mobile.BuildTools.1.4.0.638\build\Mobile.BuildTools.targets')" />
+    <Import Project="..\packages\Refit.4.6.16\build\netstandard1.4\refit.targets" Condition="Exists('..\packages\Refit.4.6.16\build\netstandard1.4\refit.targets')" />
 </Project>
