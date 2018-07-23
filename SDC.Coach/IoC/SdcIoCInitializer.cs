@@ -1,5 +1,6 @@
 ﻿using System;
 using Autofac;
+using System.Net.Http;
 
 namespace SDC.Coach.IoC
 {
@@ -13,6 +14,22 @@ namespace SDC.Coach.IoC
             // inherit from SdcIoCInitializer on platform project
             // override Initialize add specific types after base.Initialize
             // shanged initialization type in plaform specific MvxSetup
+            RegisterNetworkStructure(containerBuilder);
+        }
+
+        protected static String IoCNamePlatformHandler { get; } = nameof(IoCNamePlatformHandler);
+
+        private static void RegisterNetworkStructure(ContainerBuilder containerBuilder)
+        {
+            containerBuilder.Register(c =>
+            {
+                HttpMessageHandler handler;
+
+                handler = c.ResolveNamed<HttpMessageHandler>(IoCNamePlatformHandler);
+
+                return handler;
+            })
+            .As<HttpMessageHandler>();
         }
     }
 }
