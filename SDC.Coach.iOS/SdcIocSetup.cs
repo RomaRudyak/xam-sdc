@@ -4,6 +4,7 @@ using MvvmCross.IoC;
 using MvvmCross.Platforms.Ios.Core;
 using MvvmCross.ViewModels;
 using SDC.Coach.IoC;
+using SDC.Coach.IoC.Autofac;
 
 namespace SDC.Coach.iOS
 {
@@ -12,7 +13,7 @@ namespace SDC.Coach.iOS
     {
         protected override IMvxIoCProvider CreateIocProvider()
         {
-            return new AutofacMvxIocProvider(new ContainerBuilder().Build());
+            return this.CretateAndInitializeAutofacProvider<SdcIoCInitializer>();
         }
     }
 }

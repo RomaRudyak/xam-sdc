@@ -1,8 +1,9 @@
 ﻿using MvvmCross.Droid.Support.V7.AppCompat;
 using MvvmCross.IoC;
 using MvvmCross.ViewModels;
-using SDC.Coach.IoC;
+using SDC.Coach.IoC.Autofac;
 using Autofac;
+using SDC.Coach.IoC;
 
 namespace SDC.Coach.Droid
 {
@@ -11,7 +12,7 @@ namespace SDC.Coach.Droid
     {
         protected override IMvxIoCProvider CreateIocProvider()
         {
-            return new AutofacMvxIocProvider(new ContainerBuilder().Build());
+            return this.CretateAndInitializeAutofacProvider<SdcIoCInitializer>();
         }
     }
 }
