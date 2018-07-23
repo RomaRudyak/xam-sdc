@@ -17,7 +17,7 @@ using MvvmCross.Droid.Support.V7.AppCompat;
 namespace SDC.Coach.Droid
 {
     [Application]
-    public class MainApplication : MvxAppCompatApplication<MvxAppCompatSetup<App>, App>
+    public class MainApplication : MvxAppCompatApplication<SdcDroidSetup<App>, App>
     {
         public MainApplication(IntPtr javaReference, JniHandleOwnership transfer)
             : base(javaReference, transfer)
