@@ -2,7 +2,7 @@
 using MvvmCross.IoC;
 using Autofac.Core;
 
-namespace SDC.Coach.IoC
+namespace SDC.Coach.IoC.Autofac
 {
     /// <summary>
     /// Defines additional customization for Autofac property injection.

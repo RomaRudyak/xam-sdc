@@ -22,6 +22,7 @@
       <Folder Include="Google\Drive\" />
       <Folder Include="Google\Sheets\" />
       <Folder Include="IoC\" />
+      <Folder Include="IoC\Autofac\" />
     </ItemGroup>
     <ItemGroup>
       <None Remove=".DS_Store" />
