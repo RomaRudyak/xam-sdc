@@ -156,6 +156,7 @@
           <DependentUpon>LoginView.cs</DependentUpon>
         </Compile>
         <Compile Include="LinkerPleaseInclude.cs" />
+        <Compile Include="SdcIocSetup.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\SDC.Coach\SDC.Coach.csproj">
