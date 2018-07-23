@@ -162,6 +162,7 @@
         <Compile Include="Views\LoginView.cs" />
         <Compile Include="LinkerPleaseInclude.cs" />
         <Compile Include="SdcDroidSetup.cs" />
+        <Compile Include="DroidSdcIoCInitializer.cs" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Resources\AboutResources.txt" />

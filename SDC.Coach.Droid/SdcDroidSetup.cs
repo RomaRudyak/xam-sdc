@@ -10,9 +10,6 @@ namespace SDC.Coach.Droid
     public class SdcDroidSetup<TAapp> : MvxAppCompatSetup<TAapp>
         where TAapp : class, IMvxApplication, new()
     {
-        protected override IMvxIoCProvider CreateIocProvider()
-        {
-            return this.CretateAndInitializeAutofacProvider<SdcIoCInitializer>();
-        }
+        protected override IMvxIoCProvider CreateIocProvider() => this.CretateAndInitializeAutofacProvider<DroidSdcIoCInitializer>();
     }
 }

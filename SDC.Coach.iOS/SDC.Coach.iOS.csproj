@@ -157,6 +157,7 @@
         </Compile>
         <Compile Include="LinkerPleaseInclude.cs" />
         <Compile Include="SdcIocSetup.cs" />
+        <Compile Include="IOSSdcIocInitializator.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\SDC.Coach\SDC.Coach.csproj">
