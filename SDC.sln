@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDC.Coach.Droid", "SDC.Coac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDC.Coach.iOS", "SDC.Coach.iOS\SDC.Coach.iOS.csproj", "{0933E8F6-C3DE-4581-9851-7DAA723273C9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{AA66CD51-0F38-401E-948F-687349A8E4CE}"
+	ProjectSection(SolutionItems) = preProject
+		build\AndroidManifest.xml = build\AndroidManifest.xml
+		build\Info.plist = build\Info.plist
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
