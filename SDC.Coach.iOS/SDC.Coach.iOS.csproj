@@ -12,6 +12,8 @@
         <AssemblyName>SDC.Coach.iOS</AssemblyName>
         <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
         <DisableBuildToolsArtifactCopy>false</DisableBuildToolsArtifactCopy>
+        <!-- Mobile.BuildTools -->
+        <IsiOSProject>true</IsiOSProject>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
         <DebugSymbols>true</DebugSymbols>
@@ -206,4 +208,8 @@
     <Import Project="..\packages\Xamarin.Google.iOS.SignIn.4.1.1.1\build\Xamarin.Google.iOS.SignIn.targets" Condition="Exists('..\packages\Xamarin.Google.iOS.SignIn.4.1.1.1\build\Xamarin.Google.iOS.SignIn.targets')" />
     <Import Project="..\packages\Mobile.BuildTools.1.4.0.638\build\Mobile.BuildTools.targets" Condition="Exists('..\packages\Mobile.BuildTools.1.4.0.638\build\Mobile.BuildTools.targets')" />
     <Import Project="..\packages\Refit.4.6.16\build\netstandard1.4\refit.targets" Condition="Exists('..\packages\Refit.4.6.16\build\netstandard1.4\refit.targets')" />
+    <Target Name="RemoveInfoPlist"
+        BeforeTargets="Clean">
+        <Delete Files="$(ManifestDestinationPath)" />
+    </Target>
 </Project>

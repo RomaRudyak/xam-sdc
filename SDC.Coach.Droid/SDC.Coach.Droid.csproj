@@ -19,6 +19,7 @@
         <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
         <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
         <DisableBuildToolsArtifactCopy>false</DisableBuildToolsArtifactCopy>
+        <IsAndroidProject>true</IsAndroidProject>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <DebugSymbols>true</DebugSymbols>
@@ -233,4 +234,8 @@
     <Import Project="..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets')" />
     <Import Project="..\packages\Mobile.BuildTools.1.4.0.638\build\Mobile.BuildTools.targets" Condition="Exists('..\packages\Mobile.BuildTools.1.4.0.638\build\Mobile.BuildTools.targets')" />
     <Import Project="..\packages\Refit.4.6.16\build\netstandard1.4\refit.targets" Condition="Exists('..\packages\Refit.4.6.16\build\netstandard1.4\refit.targets')" />
+    <Target Name="RemoveAndroidManifest"
+        BeforeTargets="Clean">
+        <Delete Files="$(ManifestDestinationPath)" />
+    </Target>
 </Project>
