@@ -140,9 +140,6 @@
         <Reference Include="MvvmCross.Droid.Support.V7.AppCompat">
             <HintPath>..\packages\MvvmCross.Droid.Support.V7.AppCompat.6.1.2\lib\monoandroid81\MvvmCross.Droid.Support.V7.AppCompat.dll</HintPath>
         </Reference>
-        <Reference Include="Plugin.GoogleClient">
-          <HintPath>..\packages\Plugin.GoogleClient.1.0.12-beta\lib\monoandroid80\Plugin.GoogleClient.dll</HintPath>
-        </Reference>
         <Reference Include="Newtonsoft.Json">
           <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
         </Reference>
@@ -152,6 +149,9 @@
         <Reference Include="System.IO.Compression" />
         <Reference Include="Autofac">
           <HintPath>..\packages\Autofac.4.8.1\lib\netstandard1.1\Autofac.dll</HintPath>
+        </Reference>
+        <Reference Include="Plugin.GoogleClient">
+          <HintPath>..\packages\Plugin.GoogleClient.1.0.13-beta\lib\monoandroid80\Plugin.GoogleClient.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>

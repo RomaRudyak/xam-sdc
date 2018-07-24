@@ -28,7 +28,7 @@ namespace SDC.Coach.Droid.Views
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.LoginView);
 
-            GoogleClientManager.Initialize(this);
+            GoogleClientManager.Initialize(this, Configuration.GoogleClientIdDroid);
 
             // [START customize_button]
             // Set the dimensions of the sign-in button.
