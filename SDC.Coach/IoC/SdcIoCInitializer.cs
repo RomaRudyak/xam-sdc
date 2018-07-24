@@ -18,7 +18,8 @@ namespace SDC.Coach.IoC
             // override Initialize add specific types after base.Initialize
             // shanged initialization type in plaform specific MvxSetup
             RegisterNetworkStructure(containerBuilder);
-            RegisterGoogleIntegration(containerBuilder);
+            RegisterGoogleRestIntegration(containerBuilder);
+            RegisterPlugins(containerBuilder);
         }
 
         protected static String IoCNamePlatformHandler { get; } = nameof(IoCNamePlatformHandler);
@@ -38,7 +39,7 @@ namespace SDC.Coach.IoC
             .As<HttpMessageHandler>();
         }
 
-        private static void RegisterGoogleIntegration(ContainerBuilder containerBuilder)
+        private static void RegisterGoogleRestIntegration(ContainerBuilder containerBuilder)
         {
             const string urlRestDrive = "https://www.googleapis.com/drive/v3/";
             const string urlRestSheets = "https://sheets.googleapis.com/v4/";
@@ -66,5 +67,14 @@ namespace SDC.Coach.IoC
                 .Register(c => RestService.For<ISheets>(c.ResolveNamed<HttpClient>(IoCNameHttpClientSheets)))
                 .As<ISheets>();
         }
+
+        private static void RegisterPlugins(ContainerBuilder containerBuilder)
+        {
+            containerBuilder
+                .Register(c => Plugin.GoogleClient.CrossGoogleClient.Current)
+                .AsSelf()
+                .ExternallyOwned();
+        }
+
     }
 }
