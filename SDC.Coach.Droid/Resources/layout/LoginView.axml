@@ -20,7 +20,6 @@
             android:layout_height="148dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="@dimen/g_top_margin"
-            android:contentDescription="@string/desc_google_icon"
             android:src="@drawable/logo_big" />
         <TextView
             android:id="@+id/title_text"
@@ -52,19 +51,5 @@
             android:visibility="visible"
             tools:visibility="gone"
             local:MvxBind="Click LoginCommand" />
-        <Button
-            android:id="@+id/sign_out_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:weightSum="1"
-            tools:visibility="visible"
-            android:layout_centerInParent="true"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:text="@string/sign_out"
-            android:textColor="@android:color/white"
-            android:theme="@style/ThemeOverlay.MyDarkButton"
-            local:MvxBind="Click LogoutCommand" />
     </RelativeLayout>
 </LinearLayout>
