@@ -4,7 +4,7 @@ using SDC.Coach.Models;
 using Plugin.GoogleClient;
 namespace SDC.Coach.ViewModels
 {
-    public class MainLoginViewModel : ViewModelBase
+    public class MainViewModel : ViewModelBase
     {
         public UserProfile User
         {
@@ -12,7 +12,7 @@ namespace SDC.Coach.ViewModels
             set => SetProperty(ref _user, value);
         }
 
-        public MainLoginViewModel(IGoogleClientManager googleClientManager)
+        public MainViewModel(IGoogleClientManager googleClientManager)
         {
             _googleClientManager = googleClientManager;
         }

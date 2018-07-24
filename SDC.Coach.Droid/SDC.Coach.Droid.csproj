@@ -163,6 +163,7 @@
         <Compile Include="LinkerPleaseInclude.cs" />
         <Compile Include="SdcDroidSetup.cs" />
         <Compile Include="DroidSdcIoCInitializer.cs" />
+        <Compile Include="Views\MainView.cs" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Resources\AboutResources.txt" />
@@ -195,6 +196,7 @@
         <AndroidResource Include="Resources\values-land\dimens.xml" />
         <AndroidResource Include="Resources\values-w820dp\dimens.xml" />
         <AndroidResource Include="Resources\drawable\logo_big.png" />
+        <AndroidResource Include="Resources\layout\MainView.axml" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\drawable\" />
