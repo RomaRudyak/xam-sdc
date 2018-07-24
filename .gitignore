@@ -42,6 +42,8 @@ Thumbs.db
 
 # Mobile.BuildTools
 secrets.json
+SDC.Coach.Droid/Properties/AndroidManifest.xml
+SDC.Coach.iOS/Info.plist
 
 # Cake
 tools/**
