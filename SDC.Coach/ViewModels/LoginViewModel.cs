@@ -13,27 +13,12 @@ namespace SDC.Coach.ViewModels
 {
     public class LoginViewModel : ViewModelBase
     {
-        public UserProfile User
-        {
-            get => _user;
-            set => SetProperty(ref _user, value);
-        }
-
-        public bool IsLoggedIn
-        {
-            get => _isLoggedIn;
-            set => SetProperty(ref _isLoggedIn, value);
-        }
-
         public ICommand LoginCommand { get; set; }
-        public ICommand LogoutCommand { get; set; }
 
-        public LoginViewModel()
+        public LoginViewModel(IGoogleClientManager googleClientManager)
         {
             LoginCommand = new MvxCommand(async () => await LoginAsync());
-            LogoutCommand = new MvxCommand(Logout);
-            _googleClientManager = CrossGoogleClient.Current;
-            IsLoggedIn = false;
+            _googleClientManager = googleClientManager;
         }
 
         public async Task LoginAsync()
@@ -41,7 +26,7 @@ namespace SDC.Coach.ViewModels
             try
             {
                 var res = await _googleClientManager.LoginAsync();
-                OnLoginCompleted(res);
+                await OnLoginCompleted(res);
             }
             catch (GoogleClientBaseException e)
             {
@@ -51,50 +36,21 @@ namespace SDC.Coach.ViewModels
         }
 
 
-        private void OnLoginCompleted(GoogleResponse<GoogleUser> loginEventArgs)
+        private async Task OnLoginCompleted(GoogleResponse<GoogleUser> loginEventArgs)
         {
             if (loginEventArgs.Data == null)
             {
                 OnError(loginEventArgs.Message);
-                User = null;
                 return;
             }
 
-            GoogleUser googleUser = loginEventArgs.Data;
-
-            var user = new UserProfile
-            {
-                Name = googleUser.Name,
-                Email = googleUser.Email,
-                Picture = googleUser.Picture,
-            };
-
-            User = user;
-
-            // Log the current User email
-            Debug.WriteLine(User.Email);
-            IsLoggedIn = true;
+            await NavigationService.Navigate<MainLoginViewModel>();
         }
 
-
-        public void Logout()
-        {
-            _googleClientManager.OnLogout += OnLogoutCompleted;
-            _googleClientManager.Logout();
-        }
-
-        private void OnLogoutCompleted(object sender, EventArgs loginEventArgs)
-        {
-            IsLoggedIn = false;
-            User.Email = "Offline";
-            _googleClientManager.OnLogout -= OnLogoutCompleted;
-        }
         private static void OnError(string message) => Debug.WriteLine(message);
 
 
         private readonly IGoogleClientManager _googleClientManager;
-        private UserProfile _user;
-        private bool _isLoggedIn;
 
     }
 }
