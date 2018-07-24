@@ -44,7 +44,9 @@ namespace SDC.Coach.ViewModels
                 return;
             }
 
-            await NavigationService.Navigate<MainLoginViewModel>();
+            // Todo: find posibility to triger navigation after activity resumed after dilog hided
+            await Task.Delay(1000);
+            await NavigationService.Navigate<MainViewModel>();
         }
 
         private static void OnError(string message) => Debug.WriteLine(message);
