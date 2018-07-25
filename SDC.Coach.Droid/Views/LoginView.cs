@@ -20,6 +20,7 @@ namespace SDC.Coach.Droid.Views
     [Activity(
         Label = "Coach"
         , MainLauncher = true
+        , NoHistory = true
         )]
     public class LoginView : MvxAppCompatActivity<LoginViewModel>
     {
@@ -28,7 +29,10 @@ namespace SDC.Coach.Droid.Views
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.LoginView);
 
-            GoogleClientManager.Initialize(this, Configuration.GoogleClientIdDroid);
+            GoogleClientManager.Initialize(
+                this
+                , clientId: Configuration.GoogleClientIdDroid
+                );
 
             // [START customize_button]
             // Set the dimensions of the sign-in button.
