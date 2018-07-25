@@ -21,6 +21,7 @@ namespace SDC.Coach.Droid.Views
     [Activity(
         Label = "Coach"
         , MainLauncher = true
+        , NoHistory = true
         )]
     public class LoginView : MvxAppCompatActivity<LoginViewModel>
     {

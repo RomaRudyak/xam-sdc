@@ -14,8 +14,16 @@ namespace SDC.Coach.iOS
     [Register ("LoginView")]
     partial class LoginView
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel AppNameLabel { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (AppNameLabel != null) {
+                AppNameLabel.Dispose ();
+                AppNameLabel = null;
+            }
         }
     }
 }

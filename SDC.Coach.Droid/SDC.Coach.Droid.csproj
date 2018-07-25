@@ -140,6 +140,16 @@
         <Reference Include="MvvmCross.Droid.Support.V7.AppCompat">
             <HintPath>..\packages\MvvmCross.Droid.Support.V7.AppCompat.6.1.2\lib\monoandroid81\MvvmCross.Droid.Support.V7.AppCompat.dll</HintPath>
         </Reference>
+        <Reference Include="Newtonsoft.Json">
+          <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="Refit">
+          <HintPath>..\packages\Refit.4.6.16\lib\netstandard2.0\Refit.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.Compression" />
+        <Reference Include="Autofac">
+          <HintPath>..\packages\Autofac.4.8.1\lib\netstandard1.1\Autofac.dll</HintPath>
+        </Reference>
         <Reference Include="Plugin.GoogleClient">
           <HintPath>..\..\GoogleClientPlugin\GoogleClient\GoogleClient\bin\Debug\monoandroid80\Plugin.GoogleClient.dll</HintPath>
         </Reference>
@@ -151,6 +161,9 @@
         <Compile Include="MainApplication.cs" />
         <Compile Include="Views\LoginView.cs" />
         <Compile Include="LinkerPleaseInclude.cs" />
+        <Compile Include="SdcDroidSetup.cs" />
+        <Compile Include="DroidSdcIoCInitializer.cs" />
+        <Compile Include="Views\MainView.cs" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Resources\AboutResources.txt" />
@@ -183,6 +196,7 @@
         <AndroidResource Include="Resources\values-land\dimens.xml" />
         <AndroidResource Include="Resources\values-w820dp\dimens.xml" />
         <AndroidResource Include="Resources\drawable\logo_big.png" />
+        <AndroidResource Include="Resources\layout\MainView.axml" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\drawable\" />
@@ -220,4 +234,5 @@
     <Import Project="..\packages\Xamarin.Android.Support.Design.27.0.2\build\MonoAndroid81\Xamarin.Android.Support.Design.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Design.27.0.2\build\MonoAndroid81\Xamarin.Android.Support.Design.targets')" />
     <Import Project="..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets')" />
     <Import Project="..\packages\Mobile.BuildTools.1.4.0.638\build\Mobile.BuildTools.targets" Condition="Exists('..\packages\Mobile.BuildTools.1.4.0.638\build\Mobile.BuildTools.targets')" />
+    <Import Project="..\packages\Refit.4.6.16\build\netstandard1.4\refit.targets" Condition="Exists('..\packages\Refit.4.6.16\build\netstandard1.4\refit.targets')" />
 </Project>
