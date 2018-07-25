@@ -32,6 +32,7 @@ namespace SDC.Coach.Droid.Views
 
             //GoogleClientManager.Initialize(this);
             GoogleClientManager.Initialize(this
+                , null
                 , Configuration.GoogleClientIdDroid
                 , new[] { DriveClass.API }
                 , new[] { Scopes.DriveFile }
