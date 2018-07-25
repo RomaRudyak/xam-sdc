@@ -15,7 +15,7 @@ namespace SDC.Coach.iOS
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
 
-            GoogleClientManager.Initialize(Configuration.GoogleClientIdiOS);
+            GoogleClientManager.Initialize(clientid: Configuration.GoogleClientIdiOS);
 
             return base.FinishedLaunching(application, launchOptions);
         }
