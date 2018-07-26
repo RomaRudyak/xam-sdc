@@ -16,9 +16,11 @@ namespace SDC.Coach.iOS
         {
             GoogleClientManager.Initialize(
                 Configuration.GoogleClientIdiOS
-                , "https://www.googleapis.com/auth/drive"
+            // , "https://www.googleapis.com/auth/drive"
 
             );
+
+            // SignIn.SharedInstance.CurrentUser
 
             return base.FinishedLaunching(application, launchOptions);
         }

@@ -35,6 +35,19 @@ namespace SDC.Coach.ViewModels
 
         }
 
+        public override async void ViewAppeared()
+        {
+            base.ViewAppeared();
+            try
+            {
+                var res = await _googleClientManager.SilentLoginAsync();
+                await OnLoginCompleted(res);
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
 
         private async Task OnLoginCompleted(GoogleResponse<GoogleUser> loginEventArgs)
         {

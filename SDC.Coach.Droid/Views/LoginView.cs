@@ -15,6 +15,7 @@ using MvvmCross.Platforms.Android.Binding.Views;
 using MvvmCross.Droid.Support.V7.AppCompat;
 using SDC.Coach.ViewModels;
 using Android.Gms.Drive;
+using System.Threading.Tasks;
 
 namespace SDC.Coach.Droid.Views
 {
@@ -34,10 +35,13 @@ namespace SDC.Coach.Droid.Views
             GoogleClientManager.Initialize(this
                 , null
                 , Configuration.GoogleClientIdDroid
-                , new[] { DriveClass.API }
-                , new[] { Scopes.DriveFile }
+            //, new[] { DriveClass.API }
+            //, new[] { Scopes.DriveFile }
             );
 
+            // GoogleClientManager.GoogleApiClient.IsConnected
+
+            // Auth.GoogleSignInApi.SilentSignIn(GoogleClientManager.GoogleApiClient).AsAsync<GoogleSignInResult>();
             // [START customize_button]
             // Set the dimensions of the sign-in button.
             var signInButton = FindViewById<SignInButton>(Resource.Id.sign_in_button);

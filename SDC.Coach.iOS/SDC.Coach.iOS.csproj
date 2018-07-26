@@ -142,6 +142,9 @@
         <InterfaceDefinition Include="VIews\LoginView.xib">
           <DependentUpon>LoginView.cs</DependentUpon>
         </InterfaceDefinition>
+        <InterfaceDefinition Include="VIews\MainView.xib">
+          <DependentUpon>LoginView.cs</DependentUpon>
+        </InterfaceDefinition>
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
@@ -158,6 +161,10 @@
         <Compile Include="LinkerPleaseInclude.cs" />
         <Compile Include="SdcIocSetup.cs" />
         <Compile Include="IOSSdcIocInitializator.cs" />
+        <Compile Include="VIews\MainView.cs" />
+        <Compile Include="VIews\MainView.designer.cs">
+          <DependentUpon>MainView.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\SDC.Coach\SDC.Coach.csproj">
