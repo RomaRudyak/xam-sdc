@@ -38,7 +38,7 @@ namespace SDC.Coach.Droid.Views
             // Set the dimensions of the sign-in button.
             var signInButton = FindViewById<SignInButton>(Resource.Id.sign_in_button);
             signInButton.SetSize(SignInButton.SizeWide);
-            signInButton.Click += (s, e) => CrossGoogleClient.Current.LoginAsync();
+            //signInButton.Click += (s, e) => CrossGoogleClient.Current.LoginAsync();
             // [END customize_button]
         }
 
