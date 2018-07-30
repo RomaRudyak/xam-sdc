@@ -6440,8 +6440,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0041
 			public const int SYM = 2131492929;
 			
-			// aapt resource value: 0x7f0c00ab
-			public const int action0 = 2131493035;
+			// aapt resource value: 0x7f0c00a9
+			public const int action0 = 2131493033;
 			
 			// aapt resource value: 0x7f0c0085
 			public const int action_bar = 2131492997;
@@ -6464,17 +6464,17 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0063
 			public const int action_bar_title = 2131492963;
 			
-			// aapt resource value: 0x7f0c00a8
-			public const int action_container = 2131493032;
+			// aapt resource value: 0x7f0c00a6
+			public const int action_container = 2131493030;
 			
 			// aapt resource value: 0x7f0c0086
 			public const int action_context_bar = 2131492998;
 			
-			// aapt resource value: 0x7f0c00af
-			public const int action_divider = 2131493039;
+			// aapt resource value: 0x7f0c00ad
+			public const int action_divider = 2131493037;
 			
-			// aapt resource value: 0x7f0c00a9
-			public const int action_image = 2131493033;
+			// aapt resource value: 0x7f0c00a7
+			public const int action_image = 2131493031;
 			
 			// aapt resource value: 0x7f0c0003
 			public const int action_menu_divider = 2131492867;
@@ -6491,11 +6491,11 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0065
 			public const int action_mode_close_button = 2131492965;
 			
-			// aapt resource value: 0x7f0c00aa
-			public const int action_text = 2131493034;
+			// aapt resource value: 0x7f0c00a8
+			public const int action_text = 2131493032;
 			
-			// aapt resource value: 0x7f0c00b8
-			public const int actions = 2131493048;
+			// aapt resource value: 0x7f0c00b6
+			public const int actions = 2131493046;
 			
 			// aapt resource value: 0x7f0c0066
 			public const int activity_chooser_view_content = 2131492966;
@@ -6536,8 +6536,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c006c
 			public const int buttonPanel = 2131492972;
 			
-			// aapt resource value: 0x7f0c00ac
-			public const int cancel_action = 2131493036;
+			// aapt resource value: 0x7f0c00aa
+			public const int cancel_action = 2131493034;
 			
 			// aapt resource value: 0x7f0c004e
 			public const int center = 2131492942;
@@ -6551,8 +6551,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c007c
 			public const int checkbox = 2131492988;
 			
-			// aapt resource value: 0x7f0c00b4
-			public const int chronometer = 2131493044;
+			// aapt resource value: 0x7f0c00b2
+			public const int chronometer = 2131493042;
 			
 			// aapt resource value: 0x7f0c0057
 			public const int clip_horizontal = 2131492951;
@@ -6611,8 +6611,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c003a
 			public const int end = 2131492922;
 			
-			// aapt resource value: 0x7f0c00ba
-			public const int end_padder = 2131493050;
+			// aapt resource value: 0x7f0c00b8
+			public const int end_padder = 2131493048;
 			
 			// aapt resource value: 0x7f0c0049
 			public const int enterAlways = 2131492937;
@@ -6656,8 +6656,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c006b
 			public const int icon = 2131492971;
 			
-			// aapt resource value: 0x7f0c00b9
-			public const int icon_group = 2131493049;
+			// aapt resource value: 0x7f0c00b7
+			public const int icon_group = 2131493047;
 			
 			// aapt resource value: 0x7f0c0022
 			public const int icon_only = 2131492898;
@@ -6668,8 +6668,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0068
 			public const int image = 2131492968;
 			
-			// aapt resource value: 0x7f0c00b5
-			public const int info = 2131493045;
+			// aapt resource value: 0x7f0c00b3
+			public const int info = 2131493043;
 			
 			// aapt resource value: 0x7f0c0062
 			public const int italic = 2131492962;
@@ -6701,14 +6701,14 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c00a2
 			public const int logo = 2131493026;
 			
-			// aapt resource value: 0x7f0c00bd
-			public const int masked = 2131493053;
-			
-			// aapt resource value: 0x7f0c00ae
-			public const int media_actions = 2131493038;
-			
 			// aapt resource value: 0x7f0c00bb
-			public const int message = 2131493051;
+			public const int masked = 2131493051;
+			
+			// aapt resource value: 0x7f0c00ac
+			public const int media_actions = 2131493036;
+			
+			// aapt resource value: 0x7f0c00b9
+			public const int message = 2131493049;
 			
 			// aapt resource value: 0x7f0c003b
 			public const int middle = 2131492923;
@@ -6731,14 +6731,14 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0029
 			public const int normal = 2131492905;
 			
-			// aapt resource value: 0x7f0c00b7
-			public const int notification_background = 2131493047;
+			// aapt resource value: 0x7f0c00b5
+			public const int notification_background = 2131493045;
 			
-			// aapt resource value: 0x7f0c00b1
-			public const int notification_main_column = 2131493041;
+			// aapt resource value: 0x7f0c00af
+			public const int notification_main_column = 2131493039;
 			
-			// aapt resource value: 0x7f0c00b0
-			public const int notification_main_column_container = 2131493040;
+			// aapt resource value: 0x7f0c00ae
+			public const int notification_main_column_container = 2131493038;
 			
 			// aapt resource value: 0x7f0c0055
 			public const int parallax = 2131492949;
@@ -6764,11 +6764,11 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0053
 			public const int right = 2131492947;
 			
-			// aapt resource value: 0x7f0c00b6
-			public const int right_icon = 2131493046;
+			// aapt resource value: 0x7f0c00b4
+			public const int right_icon = 2131493044;
 			
-			// aapt resource value: 0x7f0c00b2
-			public const int right_side = 2131493042;
+			// aapt resource value: 0x7f0c00b0
+			public const int right_side = 2131493040;
 			
 			// aapt resource value: 0x7f0c000c
 			public const int save_image_matrix = 2131492876;
@@ -6845,9 +6845,6 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c00a5
 			public const int sign_in_button = 2131493029;
 			
-			// aapt resource value: 0x7f0c00a7
-			public const int sign_out_button = 2131493031;
-			
 			// aapt resource value: 0x7f0c0094
 			public const int smallLabel = 2131493012;
 			
@@ -6881,8 +6878,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0054
 			public const int start = 2131492948;
 			
-			// aapt resource value: 0x7f0c00ad
-			public const int status_bar_latest_event_content = 2131493037;
+			// aapt resource value: 0x7f0c00ab
+			public const int status_bar_latest_event_content = 2131493035;
 			
 			// aapt resource value: 0x7f0c007f
 			public const int submenuarrow = 2131492991;
@@ -6917,8 +6914,8 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0015
 			public const int textinput_error = 2131492885;
 			
-			// aapt resource value: 0x7f0c00b3
-			public const int time = 2131493043;
+			// aapt resource value: 0x7f0c00b1
+			public const int time = 2131493041;
 			
 			// aapt resource value: 0x7f0c001c
 			public const int title = 2131492892;
@@ -6968,14 +6965,11 @@ namespace SDC.Coach.Droid
 			// aapt resource value: 0x7f0c0030
 			public const int useLogo = 2131492912;
 			
-			// aapt resource value: 0x7f0c00a6
-			public const int user_name = 2131493030;
-			
 			// aapt resource value: 0x7f0c0016
 			public const int view_offset_helper = 2131492886;
 			
-			// aapt resource value: 0x7f0c00bc
-			public const int visible = 2131493052;
+			// aapt resource value: 0x7f0c00ba
+			public const int visible = 2131493050;
 			
 			// aapt resource value: 0x7f0c0024
 			public const int wide = 2131492900;
@@ -7166,70 +7160,67 @@ namespace SDC.Coach.Droid
 			public const int design_text_input_password_icon = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int LoginView = 2130968616;
+			public const int MainView = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int MainView = 2130968617;
+			public const int notification_action = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int notification_action = 2130968618;
+			public const int notification_action_tombstone = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int notification_action_tombstone = 2130968619;
+			public const int notification_media_action = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int notification_media_action = 2130968620;
+			public const int notification_media_cancel_action = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int notification_media_cancel_action = 2130968621;
+			public const int notification_template_big_media = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int notification_template_big_media = 2130968622;
+			public const int notification_template_big_media_custom = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int notification_template_big_media_custom = 2130968623;
+			public const int notification_template_big_media_narrow = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int notification_template_big_media_narrow = 2130968624;
+			public const int notification_template_big_media_narrow_custom = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_template_big_media_narrow_custom = 2130968625;
+			public const int notification_template_custom_big = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_template_custom_big = 2130968626;
+			public const int notification_template_icon_group = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_template_icon_group = 2130968627;
+			public const int notification_template_lines_media = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_lines_media = 2130968628;
+			public const int notification_template_media = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_media = 2130968629;
+			public const int notification_template_media_custom = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_media_custom = 2130968630;
+			public const int notification_template_part_chronometer = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_part_chronometer = 2130968631;
+			public const int notification_template_part_time = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_part_time = 2130968632;
+			public const int select_dialog_item_material = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int select_dialog_item_material = 2130968633;
+			public const int select_dialog_multichoice_material = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int select_dialog_multichoice_material = 2130968634;
+			public const int select_dialog_singlechoice_material = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int select_dialog_singlechoice_material = 2130968635;
+			public const int support_simple_spinner_dropdown_item = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int support_simple_spinner_dropdown_item = 2130968636;
-			
-			// aapt resource value: 0x7f04003d
-			public const int tooltip = 2130968637;
+			public const int tooltip = 2130968636;
 			
 			static Layout()
 			{

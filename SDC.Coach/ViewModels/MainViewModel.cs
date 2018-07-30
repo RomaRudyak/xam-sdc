@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace SDC.Coach.ViewModels
 {
-    public class LoginViewModel : ViewModelBase
+    public class MainViewModel : ViewModelBase
     {
         public ICommand LoginCommand { get; set; }
 
-        public LoginViewModel(IGoogleClientManager googleClientManager)
+        public MainViewModel(IGoogleClientManager googleClientManager)
         {
             LoginCommand = new MvxCommand(async () => await LoginAsync());
             _googleClientManager = googleClientManager;

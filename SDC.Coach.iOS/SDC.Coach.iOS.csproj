@@ -139,8 +139,8 @@
     </ItemGroup>
     <ItemGroup>
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
-        <InterfaceDefinition Include="VIews\LoginView.xib">
-          <DependentUpon>LoginView.cs</DependentUpon>
+        <InterfaceDefinition Include="VIews\MainView.xib">
+          <DependentUpon>MainView.cs</DependentUpon>
         </InterfaceDefinition>
     </ItemGroup>
     <ItemGroup>
@@ -151,13 +151,17 @@
     <ItemGroup>
         <Compile Include="Main.cs" />
         <Compile Include="AppDelegate.cs" />
-        <Compile Include="VIews\LoginView.cs" />
-        <Compile Include="VIews\LoginView.designer.cs">
-          <DependentUpon>LoginView.cs</DependentUpon>
+        <Compile Include="VIews\MainView.cs" />
+        <Compile Include="VIews\MainView.designer.cs">
+          <DependentUpon>MainView.cs</DependentUpon>
         </Compile>
         <Compile Include="LinkerPleaseInclude.cs" />
         <Compile Include="SdcIocSetup.cs" />
         <Compile Include="IOSSdcIocInitializator.cs" />
+        <Compile Include="MainView.cs" />
+        <Compile Include="MainView.designer.cs">
+          <DependentUpon>MainView.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\SDC.Coach\SDC.Coach.csproj">

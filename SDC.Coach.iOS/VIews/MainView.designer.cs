@@ -12,7 +12,7 @@ using UIKit;
 namespace SDC.Coach.iOS
 {
     [Register ("LoginView")]
-    partial class LoginView
+    partial class MainView
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]

@@ -11,13 +11,13 @@ using MvvmCross.Platforms.Ios.Binding;
 namespace SDC.Coach.iOS
 {
     [MvxRootPresentation]
-    public partial class LoginView : MvxViewController<LoginViewModel>
+    public partial class MainView : MvxViewController<MainViewModel>
     {
         public SignInButton SignInButton { get; private set; }
 
 
-        public LoginView()
-            : base(nameof(LoginView), null)
+        public MainView()
+            : base(nameof(MainView), null)
         {
         }
 
@@ -36,7 +36,7 @@ namespace SDC.Coach.iOS
                 , SignInButton.WithSameCenterX(AppNameLabel)
             );
 
-            var set = this.CreateBindingSet<LoginView, LoginViewModel>();
+            var set = this.CreateBindingSet<MainView, MainViewModel>();
 
             set.Bind(SignInButton)
                .For(c => c.BindTouchUpInside())

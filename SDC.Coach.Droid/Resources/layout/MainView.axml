@@ -20,41 +20,36 @@
             android:layout_height="148dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="@dimen/g_top_margin"
-            local:MvxBind="src User.Image" />
+            android:src="@drawable/logo_big" />
         <TextView
+            android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/wellcom_text"
+            android:text="@string/title_text"
             android:gravity="center"
             android:textColor="@color/red"
             android:textSize="36sp" />
         <TextView
-            android:id="@+id/user_name"
+            android:id="@+id/title_text_app"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:text="@string/app_name"
             android:gravity="center"
             android:textColor="@color/red_light"
-            android:textSize="@dimen/abc_text_size_title_material"
-            local:MvxBind="Text User.Name" />
+            android:textSize="@dimen/abc_text_size_small_material" />
     </LinearLayout>
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-        <Button
-            android:id="@+id/sign_out_button"
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:weightSum="1"
-            tools:visibility="visible"
             android:layout_centerInParent="true"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:text="@string/sign_out"
-            android:textColor="@android:color/white"
-            android:theme="@style/ThemeOverlay.MyDarkButton"
-            local:MvxBind="Click LogoutCommand" />
+            android:visibility="visible"
+            tools:visibility="gone"
+            local:MvxBind="Click LoginCommand" />
     </RelativeLayout>
 </LinearLayout>

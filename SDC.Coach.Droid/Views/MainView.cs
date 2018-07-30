@@ -22,7 +22,7 @@ namespace SDC.Coach.Droid.Views
         , MainLauncher = true
         , NoHistory = true
         )]
-    public class LoginView : MvxAppCompatActivity<LoginViewModel>
+    public class LoginView : MvxAppCompatActivity<MainViewModel>
     {
         protected override void OnCreate(Bundle bundle)
         {
