@@ -151,7 +151,6 @@
         <Compile Include="LinkerPleaseInclude.cs" />
         <Compile Include="SdcDroidSetup.cs" />
         <Compile Include="DroidSdcIoCInitializer.cs" />
-        <Compile Include="Views\MainView.cs" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Resources\AboutResources.txt" />
