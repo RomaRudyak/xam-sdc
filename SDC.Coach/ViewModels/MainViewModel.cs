@@ -13,11 +13,19 @@ namespace SDC.Coach.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
+        public UserProfile User
+        {
+            get => _user;
+            set => SetProperty(ref _user, value);
+        }
+
         public ICommand LoginCommand { get; set; }
+        public ICommand LogoutCommand { get; set; }
 
         public MainViewModel(IGoogleClientManager googleClientManager)
         {
             LoginCommand = new MvxCommand(async () => await LoginAsync());
+            LogoutCommand = new MvxCommand(Logout);
             _googleClientManager = googleClientManager;
         }
 
@@ -51,8 +59,13 @@ namespace SDC.Coach.ViewModels
 
         private static void OnError(string message) => Debug.WriteLine(message);
 
+        private void Logout()
+        {
+            _googleClientManager.Logout();
+        }
+
 
         private readonly IGoogleClientManager _googleClientManager;
-
+        private UserProfile _user;
     }
 }
