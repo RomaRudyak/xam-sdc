@@ -142,6 +142,9 @@
         <Reference Include="Xamarin.Android.Support.Vector.Drawable">
           <HintPath>..\packages\Xamarin.Android.Support.Vector.Drawable.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
         </Reference>
+        <Reference Include="MvvmCross.Plugin.Visibility">
+          <HintPath>..\packages\MvvmCross.Plugin.Visibility.6.1.2\lib\monoandroid81\MvvmCross.Plugin.Visibility.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Resources\Resource.designer.cs" />

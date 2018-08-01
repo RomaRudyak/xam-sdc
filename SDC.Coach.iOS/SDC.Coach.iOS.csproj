@@ -128,6 +128,9 @@
         <Reference Include="Plugin.GoogleClient">
           <HintPath>..\packages\Plugin.GoogleClient.1.0.14\lib\xamarinios10\Plugin.GoogleClient.dll</HintPath>
         </Reference>
+        <Reference Include="MvvmCross.Plugin.Visibility">
+          <HintPath>..\packages\MvvmCross.Plugin.Visibility.6.1.2\lib\xamarinios10\MvvmCross.Plugin.Visibility.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -158,10 +161,6 @@
         <Compile Include="LinkerPleaseInclude.cs" />
         <Compile Include="SdcIocSetup.cs" />
         <Compile Include="IOSSdcIocInitializator.cs" />
-        <Compile Include="MainView.cs" />
-        <Compile Include="MainView.designer.cs">
-          <DependentUpon>MainView.cs</DependentUpon>
-        </Compile>
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\SDC.Coach\SDC.Coach.csproj">

@@ -13,6 +13,7 @@
       <PackageReference Include="Refit" Version="4.6.16" />
       <PackageReference Include="Autofac" Version="4.8.1" />
       <PackageReference Include="Plugin.GoogleClient" Version="1.0.14" />
+      <PackageReference Include="MvvmCross.Plugin.Visibility" Version="6.1.2" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="ViewModels\" />
