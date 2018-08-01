@@ -7,12 +7,12 @@
         <item name="colorPrimaryDark">@color/red</item>
     </style>
     <!-- Activity with no Title -->
-    <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+    <style name="AppTheme.MyNoTitleActivity" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
     <!-- Dark Buttons -->
-    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+    <style name="AppTheme.PrimaryButton" parent="ThemeOverlay.AppCompat.Dark">
         <item name="colorButtonNormal">@color/red</item>
     </style>
 </resources>

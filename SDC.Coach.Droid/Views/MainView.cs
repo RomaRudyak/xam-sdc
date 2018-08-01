@@ -22,12 +22,12 @@ namespace SDC.Coach.Droid.Views
         , MainLauncher = true
         , NoHistory = true
         )]
-    public class LoginView : MvxAppCompatActivity<MainViewModel>
+    public class MainView : MvxAppCompatActivity<MainViewModel>
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.LoginView);
+            SetContentView(Resource.Layout.MainView);
 
             GoogleClientManager.Initialize(
                 this

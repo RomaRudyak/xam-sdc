@@ -10,4 +10,5 @@
     <!-- Button labels -->
     <string name="sign_out">Sign Out</string>
     <string name="wellcom_text">Wellcom</string>
+    <string name="view_groups">Groups</string>
 </resources>
