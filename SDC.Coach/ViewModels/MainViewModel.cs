@@ -13,10 +13,16 @@ namespace SDC.Coach.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
+        public Boolean IsLoggedIn => User != null;
+
         public UserProfile User
         {
             get => _user;
-            set => SetProperty(ref _user, value);
+            set => SetProperty(
+                ref _user,
+                value,
+                onChanged: () => RaisePropertyChanged(nameof(IsLoggedIn))
+                );
         }
 
         public ICommand LoginCommand { get; set; }
@@ -29,12 +35,12 @@ namespace SDC.Coach.ViewModels
             _googleClientManager = googleClientManager;
         }
 
-        public async Task LoginAsync()
+        private async Task LoginAsync()
         {
             try
             {
                 var res = await _googleClientManager.LoginAsync();
-                await OnLoginCompleted(res);
+                OnLoginCompleted(res);
             }
             catch (GoogleClientBaseException e)
             {
@@ -44,7 +50,7 @@ namespace SDC.Coach.ViewModels
         }
 
 
-        private async Task OnLoginCompleted(GoogleResponse<GoogleUser> loginEventArgs)
+        private void OnLoginCompleted(GoogleResponse<GoogleUser> loginEventArgs)
         {
             if (loginEventArgs.Data == null)
             {
@@ -52,9 +58,14 @@ namespace SDC.Coach.ViewModels
                 return;
             }
 
-            // Todo: find posibility to triger navigation after activity resumed after dilog hided
-            await Task.Delay(1000);
-            await NavigationService.Navigate<MainViewModel>();
+            var guser = loginEventArgs.Data;
+
+            User = new UserProfile
+            {
+                Name = guser.Name,
+                Email = guser.Email,
+                Picture = guser.Picture
+            };
         }
 
         private static void OnError(string message) => Debug.WriteLine(message);
@@ -62,6 +73,7 @@ namespace SDC.Coach.ViewModels
         private void Logout()
         {
             _googleClientManager.Logout();
+            User = null;
         }
 
 
