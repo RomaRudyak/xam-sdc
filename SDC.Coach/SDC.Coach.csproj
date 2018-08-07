@@ -23,6 +23,7 @@
       <Folder Include="Google\Sheets\" />
       <Folder Include="IoC\" />
       <Folder Include="IoC\Autofac\" />
+      <Folder Include="Auth\" />
     </ItemGroup>
     <ItemGroup>
       <None Remove=".DS_Store" />

@@ -4,6 +4,8 @@ using SDC.Coach.Google.Drive;
 using Refit;
 using System.Net.Http;
 using SDC.Coach.Google.Sheets;
+using SDC.Coach.Google;
+using Plugin.GoogleClient;
 
 namespace SDC.Coach.IoC
 {
@@ -44,15 +46,25 @@ namespace SDC.Coach.IoC
             const string urlRestDrive = "https://www.googleapis.com/drive/v3/";
             const string urlRestSheets = "https://sheets.googleapis.com/v4/";
 
+
             containerBuilder
-                .Register(c => new HttpClient(c.Resolve<HttpMessageHandler>())
+                .Register(c => new GoogleAuthAwareHttpMessageHandler(
+                            c.Resolve<HttpMessageHandler>(),
+                            new GoogleAuthTokenProvider(c.Resolve<IGoogleClientManager>())
+                        ))
+                .As<GoogleAuthAwareHttpMessageHandler>()
+                .SingleInstance();
+
+            containerBuilder
+                .Register(c => new HttpClient(c.Resolve<GoogleAuthAwareHttpMessageHandler>()) 
                 {
-                    BaseAddress = new Uri(urlRestDrive)
+                    BaseAddress = new Uri(urlRestDrive) 
                 })
                 .Named<HttpClient>(IoCNameHttpClientDrive)
                 .SingleInstance();
+            
             containerBuilder
-                .Register(c => new HttpClient(c.Resolve<HttpMessageHandler>())
+                .Register(c => new HttpClient(c.Resolve<GoogleAuthAwareHttpMessageHandler>())
                 {
                     BaseAddress = new Uri(urlRestSheets)
                 })
