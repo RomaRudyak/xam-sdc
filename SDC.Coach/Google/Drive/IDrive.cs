@@ -7,7 +7,9 @@ namespace SDC.Coach.Google.Drive
 {
     public interface IDrive
     {
-        [Get("/files")]
-        Task<FilesResponse> GetFiles();
+        [Get("/files?q=mimeType%3D%27application%2Fvnd.google-apps.spreadsheet%27")]
+        Task<FilesResponse> GetSpreadsheets();
+        [Get("/files?q=mimeType%3D%27application%2Fvnd.google-apps.spreadsheet%27")]
+        Task<FilesResponse> GetSpreadsheets([AliasAs("pageToken")]String nextPageToken);
     }
 }
