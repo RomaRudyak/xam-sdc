@@ -27,11 +27,13 @@ namespace SDC.Coach.ViewModels
 
         public ICommand LoginCommand { get; set; }
         public ICommand LogoutCommand { get; set; }
+        public ICommand GoToGroupsCommand { get; set; }
 
         public MainViewModel(IGoogleClientManager googleClientManager)
         {
             LoginCommand = new MvxCommand(async () => await LoginAsync());
             LogoutCommand = new MvxCommand(Logout);
+            GoToGroupsCommand = new MvxCommand(async () => await GoToGroupsAsync());
             _googleClientManager = googleClientManager;
         }
 
@@ -75,6 +77,8 @@ namespace SDC.Coach.ViewModels
             _googleClientManager.Logout();
             User = null;
         }
+
+        private async Task GoToGroupsAsync() => await NavigationService.Navigate<GroupsViewModel>();
 
 
         private readonly IGoogleClientManager _googleClientManager;

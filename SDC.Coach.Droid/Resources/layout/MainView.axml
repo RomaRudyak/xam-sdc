@@ -62,7 +62,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/view_groups"
-                android:theme="@style/AppTheme.PrimaryButton" />
+                android:theme="@style/AppTheme.PrimaryButton"
+                local:MvxBind="Click GoToGroupsCommand" />
             <Button
                 android:id="@+id/logout_button"
                 android:layout_width="wrap_content"
