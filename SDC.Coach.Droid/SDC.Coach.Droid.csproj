@@ -145,6 +145,9 @@
         <Reference Include="MvvmCross.Plugin.Visibility">
           <HintPath>..\packages\MvvmCross.Plugin.Visibility.6.1.2\lib\monoandroid81\MvvmCross.Plugin.Visibility.dll</HintPath>
         </Reference>
+        <Reference Include="MvvmCross.Droid.Support.V7.RecyclerView">
+          <HintPath>..\packages\MvvmCross.Droid.Support.V7.RecyclerView.6.1.2\lib\monoandroid81\MvvmCross.Droid.Support.V7.RecyclerView.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Resources\Resource.designer.cs" />
