@@ -41,9 +41,23 @@ namespace SDC.Coach.iOS
             set.Bind(SignInButton)
                .For(c => c.BindTouchUpInside())
                .To(vm => vm.LoginCommand);
-            //set.Bind(SignInStatusLabel)
-            //.For(c => c.BindText())
-            //.To(vm => vm.IsLoggedIn);
+            set.Bind(SignInButton)
+               .For(c => c.Hidden)
+               .To(vm => vm.IsLoggedIn);
+
+            set.Bind(LogoutButton)
+               .For(c => c.BindVisible())
+               .To(vm => vm.IsLoggedIn);
+            set.Bind(LogoutButton)
+               .For(c => c.BindTouchUpInside())
+               .To(vm => vm.LogoutCommand);
+
+            set.Bind(ViewGroupsButton)
+               .For(c => c.BindVisible())
+               .To(vm => vm.IsLoggedIn);
+            set.Bind(ViewGroupsButton)
+               .For(c => c.BindTouchUpInside())
+               .To(vm => vm.GoToGroupsCommand);
 
             set.Apply();
 

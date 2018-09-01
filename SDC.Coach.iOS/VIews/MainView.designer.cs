@@ -11,18 +11,36 @@ using UIKit;
 
 namespace SDC.Coach.iOS
 {
-    [Register ("LoginView")]
+    [Register ("MainView")]
     partial class MainView
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel AppNameLabel { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton LogoutButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton ViewGroupsButton { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (AppNameLabel != null) {
                 AppNameLabel.Dispose ();
                 AppNameLabel = null;
+            }
+
+            if (LogoutButton != null) {
+                LogoutButton.Dispose ();
+                LogoutButton = null;
+            }
+
+            if (ViewGroupsButton != null) {
+                ViewGroupsButton.Dispose ();
+                ViewGroupsButton = null;
             }
         }
     }

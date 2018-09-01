@@ -13,6 +13,8 @@
             <connections>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
                 <outlet property="AppNameLabel" destination="280" id="name-outlet-280"/>
+                <outlet property="ViewGroupsButton" destination="728" id="name-outlet-728"/>
+                <outlet property="LogoutButton" destination="729" id="name-outlet-729"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -39,6 +41,20 @@
                         <constraint firstAttribute="height" constant="203" id="rqb-LS-0h1"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="728" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ViewGroupsButton">
+                    <rect key="frame" x="136" y="526" width="102" height="30"/>
+                    <state key="normal" title="View Groups"/>
+                    <constraints>
+                        <constraint id="932" firstAttribute="width" constant="102"/>
+                    </constraints>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="729" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LogoutButton">
+                    <rect key="frame" x="156" y="575" width="63" height="30"/>
+                    <state key="normal" title="Logout"/>
+                    <constraints>
+                        <constraint id="929" firstAttribute="width" constant="63"/>
+                    </constraints>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -50,6 +66,10 @@
                 <constraint id="561" firstItem="280" firstAttribute="top" secondItem="132" secondAttribute="bottom" constant="8"/>
                 <constraint id="562" firstItem="280" firstAttribute="centerX" secondItem="2" secondAttribute="centerX"/>
                 <constraint id="563" firstItem="280" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" constant="79"/>
+                <constraint id="927" firstAttribute="bottom" secondItem="729" secondAttribute="bottom" constant="62"/>
+                <constraint id="928" firstItem="729" firstAttribute="centerX" secondItem="2" secondAttribute="centerX"/>
+                <constraint id="930" firstItem="728" firstAttribute="centerX" secondItem="2" secondAttribute="centerX"/>
+                <constraint id="931" firstItem="729" firstAttribute="top" secondItem="728" secondAttribute="bottom" constant="19"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
