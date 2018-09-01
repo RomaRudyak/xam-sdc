@@ -33,6 +33,7 @@
         <MtouchVerbosity>
         </MtouchVerbosity>
         <MtouchExtraArgs>--registrar:static</MtouchExtraArgs>
+        <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
         <DebugType>pdbonly</DebugType>
@@ -161,6 +162,7 @@
         <Compile Include="LinkerPleaseInclude.cs" />
         <Compile Include="SdcIocSetup.cs" />
         <Compile Include="IOSSdcIocInitializator.cs" />
+        <Compile Include="VIews\GroupsView.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\SDC.Coach\SDC.Coach.csproj">
